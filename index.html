@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Persönliche Webseite von Emin (@egirimhanov). Übersicht über Projekte, Kenntnisse und Kontaktmöglichkeiten.">
+    <meta name="author" content="Emin">
+    <title>Emin (@egirimhanov) | Softwareentwickler</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-light">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">&lt;</span>egirimhanov<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">Über mich</a></li>
+                <li><a href="#skills" class="nav-link">Kenntnisse</a></li>
+                <li><a href="#projects" class="nav-link">Projekte</a></li>
+                <li><a href="#terminal" class="nav-link">Konsole</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/egirimhanov" target="_blank" class="btn btn-secondary btn-sm">
+                    <i data-lucide="github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Verfügbar für neue Projekte</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hallo, ich bin <span class="gradient-text">Emin</span>.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Ich bin Softwareentwickler. Ich baue moderne Webanwendungen, nützliche Werkzeuge und Skripte.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i data-lucide="folder-git-2"></i> Projekte ansehen
+                        </a>
+                        <a href="https://github.com/egirimhanov" target="_blank" class="btn btn-outline">
+                            <i data-lucide="github"></i> Mein GitHub
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">Web & Tools</span>
+                            <span class="stat-label">Schwerpunkt</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">Clean Code</span>
+                            <span class="stat-label">Prinzip</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">Open Source</span>
+                            <span class="stat-label">Projekte</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glass-card profile-card">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-glow"></div>
+                            <img src="https://github.com/egirimhanov.png" alt="Emin Avatar" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Emin+G&background=8B5CF6&color=fff&size=200'">
+                        </div>
+                        <h2 class="profile-name">Emin</h2>
+                        <p class="profile-handle">@egirimhanov</p>
+                        
+                        <div class="badge-list">
+                            <span class="tech-badge"><i data-lucide="code"></i> Fullstack</span>
+                            <span class="tech-badge"><i data-lucide="book-open"></i> Obsidian</span>
+                            <span class="tech-badge"><i data-lucide="terminal"></i> Skripte</span>
+                        </div>
+
+                        <div class="social-row">
+                            <a href="https://github.com/egirimhanov" target="_blank" aria-label="GitHub" class="social-icon">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="mailto:deine.email@example.com" aria-label="E-Mail" class="social-icon">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Hintergrund</span>
+                    <h2 class="section-title">Über mich</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="glass-card about-card">
+                        <div class="icon-box"><i data-lucide="code-2"></i></div>
+                        <h3>Webentwicklung</h3>
+                        <p>
+                            Ich schreibe klaren Code für Webseiten und Anwendungen. Dabei nutze ich moderne Standards und einfache Strukturen.
+                        </p>
+                    </div>
+
+                    <div class="glass-card about-card">
+                        <div class="icon-box"><i data-lucide="workflow"></i></div>
+                        <h3>Wissensmanagement</h3>
+                        <p>
+                            Ich erstelle Erweiterungen für Obsidian. Damit verbessere ich Notizen, Dokumente und tägliche Abläufe.
+                        </p>
+                    </div>
+
+                    <div class="glass-card about-card">
+                        <div class="icon-box"><i data-lucide="git-branch"></i></div>
+                        <h3>Open Source</h3>
+                        <p>
+                            Ich teile meine Werkzeuge auf GitHub. Ich lerne gerne von anderen Entwicklern und helfe bei Projekten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technologien</span>
+                    <h2 class="section-title">Meine Kenntnisse</h2>
+                </div>
+
+                <div class="skills-wrapper">
+                    <div class="glass-card skill-category">
+                        <h3 class="category-title"><i data-lucide="file-code"></i> Sprachen</h3>
+                        <div class="skills-grid">
+                            <div class="skill-pill">JavaScript</div>
+                            <div class="skill-pill">TypeScript</div>
+                            <div class="skill-pill">Python</div>
+                            <div class="skill-pill">HTML5 & CSS3</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category">
+                        <h3 class="category-title"><i data-lucide="box"></i> Frameworks & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-pill">React</div>
+                            <div class="skill-pill">Node.js</div>
+                            <div class="skill-pill">Git & GitHub</div>
+                            <div class="skill-pill">REST APIs</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category">
+                        <h3 class="category-title"><i data-lucide="wrench"></i> Arbeitsabläufe</h3>
+                        <div class="skills-grid">
+                            <div class="skill-pill">Obsidian Plugins</div>
+                            <div class="skill-pill">CLI Skripte</div>
+                            <div class="skill-pill">Automatisierung</div>
+                            <div class="skill-pill">Clean Code</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Arbeiten</span>
+                    <h2 class="section-title">Ausgewählte Projekte</h2>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    <button class="filter-btn" data-filter="tools">Werkzeuge</button>
+                    <button class="filter-btn" data-filter="web">Webseiten</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="glass-card project-card" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="folder-git-2"></i> Repository</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" class="project-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title">claude-obsidian</h3>
+                        <p class="project-desc">
+                            Verbindet Claude AI mit Obsidian. Hilft bei Notizen, Zusammenfassungen und Wissenthemen.
+                        </p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>Obsidian API</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card project-card" data-category="web">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="globe"></i> Webseite</div>
+                            <a href="https://egirimhanov.github.io" target="_blank" class="project-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title">GitHub Startseite</h3>
+                        <p class="project-desc">
+                            Diese persönliche Portfolio-Seite. Schnelle Ladezeiten, klarer Aufbau und schlichtes Design.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card project-card" data-category="tools">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="terminal"></i> Skripte</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" class="project-link">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Dev Skripte</h3>
+                        <p class="project-desc">
+                            Eine Sammlung von Skripten für tägliche Aufgaben in der Entwicklung.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Shell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Section -->
+        <section class="section" id="terminal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Konsole</span>
+                    <h2 class="section-title">Interaktive Befehlszeile</h2>
+                </div>
+
+                <div class="glass-card terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn term-close"></span>
+                            <span class="term-btn term-min"></span>
+                            <span class="term-btn term-max"></span>
+                        </div>
+                        <span class="terminal-title">bash: egirimhanov</span>
+                    </div>
+                    
+                    <div class="terminal-body" id="terminal-output">
+                        <p class="terminal-line"><span class="prompt-user">egirimhanov</span>@<span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$ help</p>
+                        <p class="terminal-info">Wähle einen Befehl aus oder tippe ihn ein:</p>
+                        <p class="terminal-info">Optionen: <span class="cmd-highlight">whoami</span> | <span class="cmd-highlight">skills</span> | <span class="cmd-highlight">projects</span> | <span class="cmd-highlight">kontakt</span> | <span class="cmd-highlight">clear</span></p>
+                    </div>
+
+                    <div class="terminal-input-row">
+                        <span class="prompt-user">egirimhanov</span>@<span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$&nbsp;
+                        <input type="text" id="terminal-input" placeholder="Befehl eingeben..." autocomplete="off">
+                    </div>
+
+                    <div class="terminal-presets">
+                        <button class="preset-btn" data-cmd="whoami">whoami</button>
+                        <button class="preset-btn" data-cmd="skills">skills</button>
+                        <button class="preset-btn" data-cmd="projects">projects</button>
+                        <button class="preset-btn" data-cmd="kontakt">kontakt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="glass-card contact-card">
+                    <div class="contact-header">
+                        <h2 class="contact-title">Schreib mir eine Nachricht</h2>
+                        <p class="contact-sub">
+                            Du kannst mich direkt über GitHub oder per E-Mail erreichen.
+                        </p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="https://github.com/egirimhanov" target="_blank" class="btn btn-primary">
+                            <i data-lucide="github"></i> Auf GitHub folgen
+                        </a>
+                        <button id="copy-email-btn" class="btn btn-secondary">
+                            <i data-lucide="copy"></i> E-Mail kopieren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Emin (@egirimhanov)</p>
+            <div class="footer-links">
+                <a href="https://github.com/egirimhanov" target="_blank">GitHub</a>
+                <a href="#hero">Nach oben</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
