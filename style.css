@@ -1,4 +1,4 @@
-/* CSS Design System for egirimhanov GitHub Startseite */
+/* CSS Design System for Emin Girimhanov Startseite */
 :root {
     --bg-dark: #0a0d14;
     --bg-card: rgba(18, 24, 38, 0.65);
@@ -83,26 +83,22 @@ body {
     animation: float 22s ease-in-out infinite alternate-reverse;
 }
 
-.blob-3 {
-    top: 40%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, #ec4899 0%, transparent 70%);
-    animation: float 15s ease-in-out infinite alternate;
-}
-
 @keyframes float {
     0% { transform: translate(0, 0) scale(1); }
     50% { transform: translate(30px, 50px) scale(1.1); }
     100% { transform: translate(-20px, -30px) scale(0.95); }
 }
 
-/* Typography Helpers */
+/* Typography Helpers & Text Clipping Fix */
 .gradient-text {
     background: linear-gradient(135deg, #a78bfa 0%, #38bdf8 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    vertical-align: bottom;
 }
 
 .container {
@@ -127,7 +123,7 @@ body {
     box-shadow: 0 12px 40px 0 rgba(139, 92, 246, 0.15);
 }
 
-/* Navbar */
+/* Navbar & Actions Alignment Fix */
 .navbar {
     position: fixed;
     top: 0;
@@ -135,7 +131,7 @@ body {
     width: 100%;
     z-index: 100;
     padding: 16px 0;
-    background: rgba(10, 13, 20, 0.75);
+    background: rgba(10, 13, 20, 0.85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -179,10 +175,17 @@ body {
     color: var(--text-main);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 12px 24px;
     border-radius: var(--radius-full);
@@ -192,11 +195,14 @@ body {
     cursor: pointer;
     transition: var(--transition);
     border: none;
+    height: 40px;
+    box-sizing: border-box;
 }
 
 .btn-sm {
-    padding: 8px 16px;
+    padding: 6px 16px;
     font-size: 0.85rem;
+    height: 36px;
 }
 
 .btn-primary {
@@ -274,18 +280,18 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.25;
     margin-bottom: 20px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-muted);
     margin-bottom: 32px;
-    max-width: 540px;
+    max-width: 560px;
 }
 
 .hero-buttons {
@@ -308,7 +314,7 @@ body {
 }
 
 .stat-number {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-main);
 }
@@ -518,12 +524,13 @@ body {
     transform: translateY(-2px);
 }
 
-/* Project Section */
+/* Project Section Grid */
 .project-filters {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin-bottom: 36px;
+    flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -582,7 +589,7 @@ body {
 }
 
 .project-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 12px;
 }
 
@@ -667,7 +674,7 @@ body {
 .prompt-path { color: #d2a8ff; }
 .cmd-highlight { color: var(--cyan); font-weight: 600; }
 .terminal-info { color: #8b949e; margin-bottom: 6px; }
-.terminal-result { color: #c9d1d9; margin-bottom: 12px; padding-left: 12px; border-left: 2px solid var(--primary); }
+.terminal-result { color: #c9d1d9; margin-bottom: 12px; padding-left: 12px; border-left: 2px solid var(--primary); white-space: pre-wrap; }
 
 .terminal-input-row {
     padding: 12px 20px;
@@ -693,6 +700,7 @@ body {
     display: flex;
     gap: 8px;
     background: #090d13;
+    flex-wrap: wrap;
 }
 
 .preset-btn {

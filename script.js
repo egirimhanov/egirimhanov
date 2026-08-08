@@ -1,25 +1,26 @@
 // JavaScript Logik für die Startseite & Sprachumschaltung (DE / EN)
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Language Toggle Logic (DE <-> EN)
     const langToggleBtn = document.getElementById('lang-toggle-btn');
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
     const commandsDE = {
         whoami: "Emin Girimhanov. Wirtschaftsinformatik-Student an der OVGU Magdeburg und Softwareentwickler bei der Falcos GmbH.",
-        skills: "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, Certified ScrumMaster (CSM).",
-        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. Tutor an der FIN OVGU (Algorithmen, Datenstrukturen & Mathe) \n 3. Stellvertreter Fachschaftsrat FIN (IT-Systeme & O-Woche) \n 4. Projekt OSCAR (Semesterplanungs-Bot)",
-        kontakt: "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/emin-giri",
-        help: "Optionen: whoami, skills, erfahrung, kontakt, clear"
+        skills: "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).",
+        hardware: "Hardware & 3D-Druck: \n 1. Autonomer Mähroboter (Raspberry Pi, Python, 3D-Druck) \n 2. CJD Schulcampus Droyßig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab",
+        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. Autonomer Mähroboter & Schulcampus CAD 3D-Druck \n 3. Tutor an der FIN OVGU (Algorithmen, Datenstrukturen & Mathe) \n 4. Stellvertreter Fachschaftsrat FIN (IT-Systeme & O-Woche) \n 5. Projekt OSCAR (Semesterplanungs-Bot)",
+        kontakt: "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
+        help: "Optionen: whoami, skills, hardware, erfahrung, kontakt, clear"
     };
 
     const commandsEN = {
         whoami: "Emin Girimhanov. Business Informatics student at OVGU Magdeburg and Software Developer at Falcos GmbH.",
-        skills: "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, Certified ScrumMaster (CSM).",
-        erfahrung: "Experience: \n 1. Falcos GmbH (Public Sector Software Dev, XÖV, LLMs) \n 2. Teaching Assistant at FIN OVGU (Algorithms, Data Structures & Math) \n 3. Student Council Representative (IT Admin & Orientation Weeks) \n 4. OSCAR Project (Semester Planner Bot)",
-        kontakt: "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/emin-giri",
-        help: "Options: whoami, skills, erfahrung, kontakt, clear"
+        skills: "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).",
+        hardware: "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python, FDM 3D printing) \n 2. CJD Droyßig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab",
+        erfahrung: "Experience: \n 1. Falcos GmbH (Public Sector Software Dev, XÖV, LLMs) \n 2. Autonomous Lawn Mower & Campus CAD 3D Printing \n 3. Teaching Assistant at FIN OVGU (Algorithms, Data Structures & Math) \n 4. Student Council Representative (IT Admin & Orientation Weeks) \n 5. OSCAR Project (Semester Planner Bot)",
+        kontakt: "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
+        help: "Options: whoami, skills, hardware, erfahrung, kontakt, clear"
     };
 
     function applyLanguage(lang) {
@@ -57,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyLanguage(currentLang);
 
-    // 2. Terminal Console Logic
     const terminalInput = document.getElementById('terminal-input');
     const terminalOutput = document.getElementById('terminal-output');
     const presetBtns = document.querySelectorAll('.preset-btn');
@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Project Filter Logic
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -131,7 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Email Copy Logic
     const copyEmailBtn = document.getElementById('copy-email-btn');
     if (copyEmailBtn) {
         copyEmailBtn.addEventListener('click', () => {
