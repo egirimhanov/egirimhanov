@@ -1,12 +1,12 @@
-// JavaScript Logik für die Startseite, Impact-Formulierungen & Synonyme im Terminal
+// JavaScript Logik für die Startseite, Impact-Formulierungen & Synonyme im Terminal (100% UTF-8 / Unicode-Sicher)
 
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle-btn');
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
-    const textExperienceDE = "Erfahrungen & Projekte: \n 1. Falcos GmbH (Entwicklung automatisierter XÖV-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Behörden, Full-Stack & LLM) \n 2. SIDUM e.V. (Mitarbeit an Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass) \n 3. Fachschaftsrat FIN OVGU (Event-Leitung für 150+ Erstsemester, Knowledge-Scaling via Wiki) \n 4. Autonomer Mähroboter (Raspberry Pi & Python-Sensorik) & Campus CAD 3D-Druck (Digitalisierungpreis)";
-    const textExperienceEN = "Experience & Projects: \n 1. Falcos GmbH (Developing automated XÖV-ZUGFeRD parsers to eliminate manual data entry time in public sector, Full-Stack & LLM) \n 2. SIDUM e.V. (Consulting on credit decision use cases with d-fine & PwC GenAI Masterclass) \n 3. Student Council FIN OVGU (Event management for 150+ students, scaling wiki knowledge) \n 4. Autonomous Mower (Raspberry Pi & Python) & Campus CAD 3D Printing (Digitalization Award)";
+    const textExperienceDE = "Erfahrungen & Projekte: \n 1. Falcos GmbH (Entwicklung automatisierter X\u00f6V-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Beh\u00f6rden, Full-Stack & LLM) \n 2. SIDUM e.V. (Mitarbeit an Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass) \n 3. Fachschaftsrat FIN OVGU (Event-Leitung f\u00fcr 150+ Erstsemester, Knowledge-Scaling via Wiki) \n 4. Autonomer M\u00e4hroboter (Raspberry Pi & Python-Sensorik) & Campus CAD 3D-Druck (Digitalisierungpreis)";
+    const textExperienceEN = "Experience & Projects: \n 1. Falcos GmbH (Developing automated X\u00d6V-ZUGFeRD parsers to eliminate manual data entry time in public sector, Full-Stack & LLM) \n 2. SIDUM e.V. (Consulting on credit decision use cases with d-fine & PwC GenAI Masterclass) \n 3. Student Council FIN OVGU (Event management for 150+ students, scaling wiki knowledge) \n 4. Autonomous Mower (Raspberry Pi & Python) & Campus CAD 3D Printing (Digitalization Award)";
 
     const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH.";
     const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH.";
@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const textSkillsDE = "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).";
     const textSkillsEN = "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).";
 
-    const textEngagementDE = "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gewählter Klassensprecher CJD Droyßig";
-    const textEngagementEN = "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droyßig";
+    const textEngagementDE = "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gew\u00e4hlter Klassensprecher CJD Droy\u00dfig";
+    const textEngagementEN = "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droy\u00dfig";
 
-    const textHardwareDE = "Hardware & 3D-Druck: \n 1. Autonomer Mähroboter (Raspberry Pi, Python-Sensorik, 3D-Druck) \n 2. CJD Schulcampus Droyßig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab";
-    const textHardwareEN = "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python sensor control, FDM 3D printing) \n 2. CJD Droyßig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab";
+    const textHardwareDE = "Hardware & 3D-Druck: \n 1. Autonomer M\u00e4hroboter (Raspberry Pi, Python-Sensorik, 3D-Druck) \n 2. CJD Schulcampus Droy\u00dfig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab";
+    const textHardwareEN = "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python sensor control, FDM 3D printing) \n 2. CJD Droy\u00dfig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab";
 
-    const textKontaktDE = "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov";
-    const textKontaktEN = "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov";
+    const textKontaktDE = "Kontakt: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/egirimhanov";
+    const textKontaktEN = "Contact: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/egirimhanov";
 
     // Synonym Map to resolve aliases to primary commands
     const aliasMap = {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultLine.innerText = responseText;
         } else {
             resultLine.innerText = currentLang === 'de' 
-                ? `Befehl '${rawCmd}' unbekannt. Tippe 'help' für Hilfe.`
+                ? `Befehl '${rawCmd}' unbekannt. Tippe 'help' f\u00fcr Hilfe.`
                 : `Command '${rawCmd}' not found. Type 'help' for options.`;
         }
 
