@@ -1,27 +1,63 @@
-// JavaScript Logik für die Startseite & Sprachumschaltung (DE / EN)
+// JavaScript Logik für die Startseite, Impact-Formulierungen & Synonyme im Terminal
 
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle-btn');
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
-    const commandsDE = {
-        whoami: "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH.",
-        skills: "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).",
-        engagement: "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gewählter Klassensprecher CJD Droyßig",
-        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. SIDUM e.V. (Unternehmensberatung Finanzen & Recht) \n 3. Autonomer Mähroboter & Schulcampus CAD 3D-Druck (Digitalisierungpreis) \n 4. Tutor an der FIN OVGU (Algorithmen & Mathe) \n 5. Fachschaftsrat FIN (Stellvertreter & IT-Admin)",
-        kontakt: "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
-        help: "Optionen: whoami, skills, engagement, erfahrung, kontakt, clear"
+    const textExperienceDE = "Erfahrungen & Projekte: \n 1. Falcos GmbH (Entwicklung automatisierter XÖV-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Behörden, Full-Stack & LLM) \n 2. SIDUM e.V. (Mitarbeit an Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass) \n 3. Fachschaftsrat FIN OVGU (Event-Leitung für 150+ Erstsemester, Knowledge-Scaling via Wiki) \n 4. Autonomer Mähroboter (Raspberry Pi & Python-Sensorik) & Campus CAD 3D-Druck (Digitalisierungpreis)";
+    const textExperienceEN = "Experience & Projects: \n 1. Falcos GmbH (Developing automated XÖV-ZUGFeRD parsers to eliminate manual data entry time in public sector, Full-Stack & LLM) \n 2. SIDUM e.V. (Consulting on credit decision use cases with d-fine & PwC GenAI Masterclass) \n 3. Student Council FIN OVGU (Event management for 150+ students, scaling wiki knowledge) \n 4. Autonomous Mower (Raspberry Pi & Python) & Campus CAD 3D Printing (Digitalization Award)";
+
+    const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH.";
+    const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH.";
+
+    const textSkillsDE = "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).";
+    const textSkillsEN = "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).";
+
+    const textEngagementDE = "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gewählter Klassensprecher CJD Droyßig";
+    const textEngagementEN = "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droyßig";
+
+    const textHardwareDE = "Hardware & 3D-Druck: \n 1. Autonomer Mähroboter (Raspberry Pi, Python-Sensorik, 3D-Druck) \n 2. CJD Schulcampus Droyßig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab";
+    const textHardwareEN = "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python sensor control, FDM 3D printing) \n 2. CJD Droyßig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab";
+
+    const textKontaktDE = "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov";
+    const textKontaktEN = "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov";
+
+    // Synonym Map to resolve aliases to primary commands
+    const aliasMap = {
+        whoami: 'whoami', about: 'whoami', profil: 'whoami', profile: 'whoami',
+        skills: 'skills', kenntnisse: 'skills', tech: 'skills', stack: 'skills',
+        erfahrung: 'erfahrung', erfahrungen: 'erfahrung', projekte: 'erfahrung', projects: 'erfahrung', experience: 'erfahrung',
+        engagement: 'engagement', consulting: 'engagement', sidum: 'engagement', farafin: 'engagement',
+        hardware: 'hardware', '3d': 'hardware', maker: 'hardware',
+        kontakt: 'kontakt', contact: 'kontakt', email: 'kontakt', mail: 'kontakt', linkedin: 'kontakt'
     };
 
-    const commandsEN = {
-        whoami: "Emin Girimhanov. Business Informatics student @OVGU (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH.",
-        skills: "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).",
-        engagement: "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droyßig",
-        erfahrung: "Experience: \n 1. Falcos GmbH (Public Sector Software Dev, XÖV, LLMs) \n 2. SIDUM e.V. (Student Management Consulting Finance & Legal) \n 3. Autonomous Lawn Mower & Campus CAD 3D Printing (Digitalization Award) \n 4. Teaching Assistant FIN OVGU (Algorithms & Math) \n 5. Student Council Representative & IT Admin",
-        kontakt: "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
-        help: "Options: whoami, skills, engagement, erfahrung, kontakt, clear"
-    };
+    function getCommandText(primaryCmd, lang) {
+        if (lang === 'de') {
+            switch (primaryCmd) {
+                case 'whoami': return textWhoamiDE;
+                case 'skills': return textSkillsDE;
+                case 'erfahrung': return textExperienceDE;
+                case 'engagement': return textEngagementDE;
+                case 'hardware': return textHardwareDE;
+                case 'kontakt': return textKontaktDE;
+                case 'help': return "Optionen: whoami, skills, erfahrung, engagement, hardware, kontakt, clear";
+                default: return null;
+            }
+        } else {
+            switch (primaryCmd) {
+                case 'whoami': return textWhoamiEN;
+                case 'skills': return textSkillsEN;
+                case 'erfahrung': return textExperienceEN;
+                case 'engagement': return textEngagementEN;
+                case 'hardware': return textHardwareEN;
+                case 'kontakt': return textKontaktEN;
+                case 'help': return "Options: whoami, skills, experience, engagement, hardware, contact, clear";
+                default: return null;
+            }
+        }
+    }
 
     function applyLanguage(lang) {
         currentLang = lang;
@@ -36,7 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(el => {
             const text = el.getAttribute(`data-${lang}`);
             if (text) {
-                el.innerText = text;
+                const tempDoc = new DOMParser().parseFromString(text, 'text/html');
+                el.innerText = tempDoc.body.textContent;
             }
         });
 
@@ -44,7 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
         inputs.forEach(input => {
             const placeholder = input.getAttribute(`data-${lang}-placeholder`);
             if (placeholder) {
-                input.placeholder = placeholder;
+                const tempDoc = new DOMParser().parseFromString(placeholder, 'text/html');
+                input.placeholder = tempDoc.body.textContent;
             }
         });
     }
@@ -63,30 +101,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const presetBtns = document.querySelectorAll('.preset-btn');
 
     function runCommand(cmd) {
-        const cleanCmd = cmd.trim().toLowerCase();
-        const activeCommands = currentLang === 'de' ? commandsDE : commandsEN;
-
+        const rawCmd = cmd.trim().toLowerCase();
         const inputLine = document.createElement('p');
         inputLine.className = 'terminal-line';
-        inputLine.innerHTML = `<span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$ ${cleanCmd}`;
+        inputLine.innerHTML = `<span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$ ${rawCmd}`;
         terminalOutput.appendChild(inputLine);
 
-        if (cleanCmd === 'clear') {
+        if (rawCmd === 'clear') {
             terminalOutput.innerHTML = '';
             return;
         }
 
+        if (rawCmd === '') {
+            return;
+        }
+
+        const primaryCmd = aliasMap[rawCmd] || rawCmd;
+        const responseText = getCommandText(primaryCmd, currentLang);
+
         const resultLine = document.createElement('div');
         resultLine.className = 'terminal-result';
 
-        if (activeCommands[cleanCmd]) {
-            resultLine.innerText = activeCommands[cleanCmd];
-        } else if (cleanCmd === '') {
-            return;
+        if (responseText) {
+            resultLine.innerText = responseText;
         } else {
             resultLine.innerText = currentLang === 'de' 
-                ? `Befehl '${cleanCmd}' unbekannt. Tippe 'help' für Hilfe.`
-                : `Command '${cleanCmd}' not found. Type 'help' for options.`;
+                ? `Befehl '${rawCmd}' unbekannt. Tippe 'help' für Hilfe.`
+                : `Command '${rawCmd}' not found. Type 'help' for options.`;
         }
 
         terminalOutput.appendChild(resultLine);

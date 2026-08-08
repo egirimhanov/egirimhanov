@@ -1,15 +1,14 @@
 # Hi, ich bin Emin Girimhanov 👋
 
-Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdeburg (Schnitt 1,6). Als Softwareentwickler bei der Falcos GmbH arbeite ich an Systemen im Public Sector. 
+Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdeburg (Schnitt 1,6). Als Softwareentwickler bei der Falcos GmbH arbeite ich an Systemen im Public Sector.
 
 ## Was ich mache
 
-* Ich entwickle Webanwendungen, Docusaurus-Seiten und XÖV-Parser für die digitale Verwaltung.
+* Ich entwickle automatisierte XÖV-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Behörden sowie Docusaurus-Plattformen.
 * Ich automatisiere Prozesse mit LLMs, AppScripts und Python.
-* Ich engagiere mich bei SIDUM e.V. (Studentische Unternehmensberatung) im Ressort Finanzen & Recht.
-* Ich erstelle CAD-Modelle, baue 3D-Druck-Projekte mit Raspberry Pi und erstelle Hardware-Steuerungen.
-* Ich gebe als Tutor an der Fakultät für Informatik Kurse in Algorithmen, Datenstrukturen und Mathematik.
-* Ich engagiere mich im Fachschaftsrat Informatik, organisiere die Erstsemesterwochen und pflege interne Wikis.
+* Ich arbeite bei SIDUM e.V. an Kreditentscheidungs-Use-Cases (Expected-Goals-Modell mit d-fine) zur Risiko-Optimierung im Ressort Finanzen & Recht.
+* Ich steuere Event-Leitung & Logistik für 150+ Erstsemester am Fachschaftsrat FIN und skaliere das interne Wiki.
+* Ich konstruiere 3D-Druck-Projekte mit Raspberry Pi und erstelle CAD-Modelle für Raumplanung.
 * Ich betreibe FOSS und Self-Hosting-Dienste wie Proxmox, Nextcloud, Paperless und n8n.
 
 ## Auszeichnungen & Zertifikate
@@ -28,13 +27,12 @@ Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdebu
 
 | Bereich | Rolle / Projekt | Beschreibung |
 | :--- | :--- | :--- |
-| **Falcos GmbH** | Softwareentwickler | Full-Stack, Docusaurus, LLM-Prozessautomatisierung, XÖV-ZUGFeRD Parser. |
-| **SIDUM e.V.** | Finanzen & Recht | Studentische Unternehmensberatung. Kreditentscheidungs-Modelle (d-fine) & PwC GenAI Masterclass. |
-| **Hardware & Maker** | Autonomer Mähroboter | Raspberry Pi, Python-Steuerung, Sensorik und 3D-Druck-Komponenten. |
-| **Schulcampus Droyßig** | CAD 3D-Modell (1:150) | Eigeninitiierte Modellierung & 3D-Druck. Ausgezeichnet mit dem Digitalisierungpreis. |
-| **FIN OVGU** | Tutor für Algorithmen & Mathe | Didaktische Leitung von Tutorien, Code-Reviews und Vorkursen. |
-| **Fachschaftsrat FIN** | Stellvertreter & IT-Referat | Organisation für 150+ Studierende, IT-Wartung und Wiki-Aufbau. |
-| **Projekt OSCAR** | Softwareprojekt | Semesterplanungs-Bot für Studierende an der Universität Magdeburg. |
+| **Falcos GmbH** | Softwareentwickler | Entwicklung automatisierter XÖV-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Behörden. |
+| **SIDUM e.V.** | Finanzen & Recht | Mitarbeit an Kreditentscheidungs-Use-Cases (d-fine) & PwC GenAI Masterclass. |
+| **Fachschaftsrat FIN** | Stellvertreter & IT-Referat | Event-Leitung & Logistik für 150+ Erstsemester; Skalierung der internen Knowledge-Base via Wiki. |
+| **Hardware & Maker** | Autonomer Mähroboter | Raspberry Pi, Python-Sensorik und 3D-Druck zur Automatisierung von Rasenpflege. |
+| **Schulcampus Droyßig** | CAD 3D-Modell (1:150) | Eigeninitiierte Modellierung & 3D-Druck. Ausgezeichnet mit dem Digitalisierungpreis für räumliche Campusplanung. |
+| **Projekt OSCAR** | Softwareprojekt | Semesterplanungs-Bot zur Optimierung der Stundenplanerstellung für Informatikstudierende. |
 | **Schulzeit CJD** | Gewählter Klassensprecher | Schülermitverantwortung, Vermittlung im Kollegium und Event-Organisation. |
 
 <br/>
@@ -50,12 +48,11 @@ I study Business Informatics at Otto von Guericke University Magdeburg (GPA 1.6)
 
 ## What I do
 
-* I build web applications, Docusaurus sites, and XÖV parsers for public administration.
+* I build automated XÖV-ZUGFeRD parsers to eliminate manual data entry time in public administrations.
 * I automate processes using LLMs, AppScripts, and Python.
-* I consult at SIDUM e.V. (Student Management Consulting) in the Finance & Legal department.
-* I design CAD models, build Raspberry Pi 3D printing projects, and construct hardware controllers.
-* I tutor students in Algorithms, Data Structures, and Mathematics at the Faculty of Computer Science.
-* I serve as a student council representative, organize orientation weeks, and maintain internal wikis.
+* I consult at SIDUM e.V. on credit decisioning use cases (Expected Goals model with d-fine) for financial risk optimization.
+* I manage orientation logistics for 150+ freshman students and scale internal wiki knowledge at the student council.
+* I design CAD models, build Raspberry Pi 3D printing projects, and construct embedded controllers.
 * I host open source services including Proxmox, Nextcloud, Paperless, and n8n.
 
 ## Scholarships & Certificates
