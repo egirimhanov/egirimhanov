@@ -421,24 +421,36 @@ body {
     color: var(--text-muted);
 }
 
+/* Social Row Under Profile Avatar Fix */
 .social-row {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
+    margin-top: 8px;
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid var(--border-color);
     color: var(--text-main);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: var(--transition);
+}
+
+.social-icon svg, .social-icon i {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    display: block;
 }
 
 .social-icon:hover {
@@ -507,7 +519,7 @@ body {
 
 /* Skills Wrapper */
 .skills-wrapper {
-    display grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
