@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const presetBtns = document.querySelectorAll('.preset-btn');
 
     const commands = {
-        whoami: "Emin (@egirimhanov). Ich entwickle Webseiten, Erweiterungen für Obsidian und Werkzeuge für den Entwickler-Alltag.",
-        skills: "Technologien: JavaScript, TypeScript, Python, HTML, CSS, React, Node.js, Git, Obsidian API.",
-        projects: "Projekte: \n 1. claude-obsidian (AI im Notizsystem) \n 2. egirimhanov.github.io (Diese Startseite) \n 3. Skripte (Werkzeuge für Entwickler)",
-        kontakt: "Kontakt: \n • GitHub: https://github.com/egirimhanov \n • E-Mail: deine.email@example.com",
-        help: "Optionen: whoami, skills, projects, kontakt, clear"
+        whoami: "Emin Girimhanov. Wirtschaftsinformatik-Student an der OVGU Magdeburg und Softwareentwickler bei der Falcos GmbH.",
+        skills: "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, Certified ScrumMaster (CSM).",
+        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. Tutor an der FIN OVGU (Algorithmen, Datenstrukturen & Mathe) \n 3. Stellvertreter Fachschaftsrat FIN (IT-Systeme & O-Woche) \n 4. Projekt OSCAR (Semesterplanungs-Bot)",
+        kontakt: "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/emin-giri",
+        help: "Optionen: whoami, skills, erfahrung, kontakt, clear"
     };
 
     function runCommand(cmd) {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const inputLine = document.createElement('p');
         inputLine.className = 'terminal-line';
-        inputLine.innerHTML = `<span class="prompt-user">egirimhanov</span>@<span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$ ${cleanCmd}`;
+        inputLine.innerHTML = `<span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$ ${cleanCmd}`;
         terminalOutput.appendChild(inputLine);
 
         if (cleanCmd === 'clear') {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyEmailBtn = document.getElementById('copy-email-btn');
     if (copyEmailBtn) {
         copyEmailBtn.addEventListener('click', () => {
-            const email = "deine.email@example.com";
+            const email = "emin.girimhanov@posteo.de";
             navigator.clipboard.writeText(email).then(() => {
                 const originalHTML = copyEmailBtn.innerHTML;
                 copyEmailBtn.innerHTML = `<i data-lucide="check"></i> Kopiert!`;

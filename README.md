@@ -1,39 +1,43 @@
-# Hi, ich bin Emin 👋
+# Hi, ich bin Emin Girimhanov 👋
 
-Ich bin Softwareentwickler. Ich baue Webseiten, Skripte und Erweiterungen für Obsidian.
+Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdeburg. Neben dem Studium arbeite ich als Softwareentwickler bei der Falcos GmbH im Public Sector.
 
 ## Was ich mache
 
-* Ich entwickle Webanwendungen mit JavaScript, TypeScript und React.
-* Ich schreibe Python-Skripte für Automatisierung und Arbeitsabläufe.
-* Ich erstelle Plugins für Obsidian, zum Beispiel zur Nutzung von Claude AI.
-* Ich lerne neue Werkzeuge und teile meinen Code auf GitHub.
+* Ich entwickle Webanwendungen, Docusaurus-Plattformen und XÖV-Parser für Verwaltungsleistungen.
+* Ich automatisiere Prozesse mit LLMs, AppScripts und Python.
+* Ich gebe als Tutor an der Fakultät für Informatik Kurse in Algorithmen, Datenstrukturen und Mathematik.
+* Ich engagiere mich im Fachschaftsrat Informatik, organisiere die Erstsemesterwochen und pflege interne Wikis.
+* Ich betreibe FOSS und Self-Hosting-Dienste wie Proxmox, Nextcloud, Paperless und n8n.
 
-## Technologien
+## Kenntnisse
 
-* **Sprachen:** JavaScript, TypeScript, Python, HTML, CSS
-* **Werkzeuge:** React, Node.js, Git, Obsidian, VS Code
+* **Sprachen:** Python, Java, JavaScript, TypeScript, HTML, CSS, SQL
+* **Web & Tools:** React, Node.js, Docusaurus, Git, Proxmox, n8n, 3D-Druck (FDM)
+* **Zertifikate:** Certified ScrumMaster (CSM), FIM-Informationsmanager & FIM-Methodenexperte
 
-## Projekte
+## Erfahrungen & Engagement
 
-| Projekt | Beschreibung | Stack |
+| Bereich | Rolle / Projekt | Beschreibung |
 | :--- | :--- | :--- |
-| **claude-obsidian** | Verbindet Claude AI mit Obsidian für Notizen und Analysen. | TypeScript, Obsidian API |
-| **Portfolio** | Meine öffentliche Startseite auf GitHub Pages. | HTML, CSS, JavaScript |
-| **Dev-Skripte** | Kleine Helfer für tägliche Entwickler-Aufgaben. | Python, Shell |
+| **Falcos GmbH** | Softwareentwickler | Full-Stack, Docusaurus, LLM-Prozessautomatisierung, XÖV-ZUGFeRD Parser. |
+| **FIN OVGU** | Tutor für Algorithmen & Mathe | Didaktische Leitung von Tutorien, Code-Reviews und Vorkursen. |
+| **Fachschaftsrat FIN** | Stellvertreter & IT-Referat | Organisation für 150+ Studierende, IT-Wartung und Wiki-Aufbau. |
+| **Projekt OSCAR** | Softwareprojekt | Semesterplanungs-Bot für Studierende an der Universität Magdeburg. |
 
 ## GitHub Statistiken
 
 <div align="center">
-  <a href="https://github.com/egirimhanov">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=egirimhanov&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
+  <a href="https://github.com/emin-giri">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=emin-giri&show_icons=true&theme=dark&hide_border=true" alt="Emin's GitHub Stats" />
   </a>
-  <a href="https://github.com/egirimhanov">
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=egirimhanov&layout=compact&theme=dark&hide_border=true" alt="Meistnutzte Sprachen" />
+  <a href="https://github.com/emin-giri">
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emin-giri&layout=compact&theme=dark&hide_border=true" alt="Meistnutzte Sprachen" />
   </a>
 </div>
 
 ## Kontakt
 
-* GitHub: [@egirimhanov](https://github.com/egirimhanov)
-* E-Mail: deine.email@example.com
+* **LinkedIn:** [linkedin.com/in/emin-girimhanov](https://www.linkedin.com/in/emin-girimhanov/)
+* **Mastodon:** [machteburch.social/@emin](https://machteburch.social/@emin)
+* **E-Mail:** emin.girimhanov@posteo.de

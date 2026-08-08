@@ -1,31 +1,26 @@
-# Bio und Anleitung für @egirimhanov
+# Bio und Profil-Vorlagen für Emin Girimhanov
 
-## 1. Bio für das GitHub-Profil (Seitenleiste)
+## 1. Kurze Bio für die GitHub-Seitenleiste (Unter 160 Zeichen)
 
-Füge eine dieser Optionen in dein Profil unter `Settings > Profile > Bio` ein.
+Füge eine dieser Optionen in deinen Profil-Einstellungen unter `Settings > Profile > Bio` ein:
 
-### Option 1 (Deutsch, direkt)
-> Softwareentwickler. Ich baue Webanwendungen, Obsidian-Erweiterungen und Skripte.
+### Option A (Deutsch, Fokus Beruf & Studium)
+> B.Sc. Wirtschaftsinformatik @OVGU | Softwareentwickler im Public Sector @Falcos GmbH | FOSS, Web & Python. 🚀
 
-### Option 2 (Englisch, klar)
-> Software developer. I build web apps, Obsidian plugins, and open source tools.
-
----
-
-## 2. GitHub Profile README erstellen
-
-1. Erstelle ein neues Repository auf GitHub.
-2. Nenne das Repository `egirimhanov`.
-3. Setze die Sichtbarkeit auf **Public**.
-4. Kopiere den Inhalt aus [`README.md`](file:///C:/Users/eming/Documents/Code/Privat_Code/egirimhanov-github-profile/README.md) in die README-Datei des Repositories.
-5. Speichere die Datei. GitHub zeigt dein Profil-README jetzt auf deiner Startseite.
+### Option B (Englisch, International)
+> Business Informatics Student @OVGU Magdeburg | Software Developer @Falcos GmbH | FOSS, Web & Python. 🚀
 
 ---
 
-## 3. Öffentliche Webseite auf GitHub Pages veröffentlichen
+## 2. Änderungen auf GitHub veröffentlichen
 
-1. Erstelle ein Repository mit dem Namen `egirimhanov.github.io`.
-2. Lade die drei Dateien [`index.html`](file:///C:/Users/eming/Documents/Code/Privat_Code/egirimhanov-github-profile/index.html), [`style.css`](file:///C:/Users/eming/Documents/Code/Privat_Code/egirimhanov-github-profile/style.css) und [`script.js`](file:///C:/Users/eming/Documents/Code/Privat_Code/egirimhanov-github-profile/script.js) hoch.
-3. Öffne die Einstellungen des Repositories unter `Settings` > `Pages`.
-4. Wähle als Quelle `Deploy from a branch` sowie den Branch `main`.
-5. Speichere die Einstellung. Deine Webseite öffnet sich nach kurzer Zeit unter `https://egirimhanov.github.io`.
+Führe diese drei Befehle in deiner PowerShell aus:
+
+```powershell
+Set-Location C:\Users\eming\Documents\Code\Privat_Code\egirimhanov-github-profile
+git add .
+git commit -m "Update profile and portfolio with resume data"
+git push all main --force
+```
+
+Der Befehl `git push all main --force` lädt deine Daten auf beide GitHub-Konten gleichzeitig hoch.
