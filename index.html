@@ -31,14 +31,17 @@
             </a>
             
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">Über mich</a></li>
-                <li><a href="#skills" class="nav-link">Kenntnisse</a></li>
-                <li><a href="#projects" class="nav-link">Erfahrungen</a></li>
-                <li><a href="#terminal" class="nav-link">Konsole</a></li>
-                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li><a href="#about" class="nav-link" data-de="Über mich" data-en="About me">Über mich</a></li>
+                <li><a href="#skills" class="nav-link" data-de="Kenntnisse" data-en="Skills">Kenntnisse</a></li>
+                <li><a href="#projects" class="nav-link" data-de="Erfahrungen" data-en="Experience">Erfahrungen</a></li>
+                <li><a href="#terminal" class="nav-link" data-de="Konsole" data-en="Console">Konsole</a></li>
+                <li><a href="#contact" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
             </ul>
 
             <div class="nav-actions">
+                <button id="lang-toggle-btn" class="btn btn-secondary btn-sm">
+                    <i data-lucide="globe"></i> <span id="lang-label">EN</span>
+                </button>
                 <a href="https://github.com/emin-giri" target="_blank" class="btn btn-secondary btn-sm">
                     <i data-lucide="github"></i> GitHub
                 </a>
@@ -53,40 +56,40 @@
                 <div class="hero-content">
                     <div class="status-badge">
                         <span class="pulse-dot"></span>
-                        <span>Softwareentwickler & Wirtschaftsinformatiker</span>
+                        <span data-de="Softwareentwickler & Wirtschaftsinformatiker" data-en="Software Developer & Business Informatics Student">Softwareentwickler & Wirtschaftsinformatiker</span>
                     </div>
 
                     <h1 class="hero-title">
-                        Hallo, ich bin <span class="gradient-text">Emin Girimhanov</span>.
+                        <span data-de="Hallo, ich bin" data-en="Hello, I am">Hallo, ich bin</span> <span class="gradient-text">Emin Girimhanov</span>.
                     </h1>
 
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-de="Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Software im Public Sector." data-en="I study Business Informatics at OVGU Magdeburg. At Falcos GmbH, I develop software for the public sector.">
                         Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Software im Public Sector.
                     </p>
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            <i data-lucide="briefcase"></i> Erfahrungen ansehen
+                            <i data-lucide="briefcase"></i> <span data-de="Erfahrungen ansehen" data-en="View Experience">Erfahrungen ansehen</span>
                         </a>
                         <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="btn btn-outline">
-                            <i data-lucide="linkedin"></i> LinkedIn Profil
+                            <i data-lucide="linkedin"></i> LinkedIn
                         </a>
                     </div>
 
                     <div class="hero-stats">
                         <div class="stat-item">
                             <span class="stat-number">OVGU</span>
-                            <span class="stat-label">B.Sc. Wirtschaftsinformatik</span>
+                            <span class="stat-label" data-de="B.Sc. Wirtschaftsinformatik" data-en="B.Sc. Business Informatics">B.Sc. Wirtschaftsinformatik</span>
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <span class="stat-number">Falcos GmbH</span>
-                            <span class="stat-label">Public Sector Dev</span>
+                            <span class="stat-label" data-de="Public Sector Dev" data-en="Public Sector Dev">Public Sector Dev</span>
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <span class="stat-number">CSM</span>
-                            <span class="stat-label">Certified ScrumMaster</span>
+                            <span class="stat-label" data-de="Certified ScrumMaster" data-en="Certified ScrumMaster">Certified ScrumMaster</span>
                         </div>
                     </div>
                 </div>
@@ -98,12 +101,12 @@
                             <img src="https://github.com/emin-giri.png" alt="Emin Girimhanov Avatar" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Emin+Girimhanov&background=8B5CF6&color=fff&size=200'">
                         </div>
                         <h2 class="profile-name">Emin Girimhanov</h2>
-                        <p class="profile-handle">Magdeburg, Deutschland</p>
+                        <p class="profile-handle" data-de="Magdeburg, Deutschland" data-en="Magdeburg, Germany">Magdeburg, Deutschland</p>
                         
                         <div class="badge-list">
                             <span class="tech-badge"><i data-lucide="code"></i> Full-Stack</span>
                             <span class="tech-badge"><i data-lucide="server"></i> FOSS & Proxmox</span>
-                            <span class="tech-badge"><i data-lucide="shield"></i> IT-Sicherheit</span>
+                            <span class="tech-badge"><i data-lucide="shield"></i> IT-Security</span>
                         </div>
 
                         <div class="social-row">
@@ -126,31 +129,31 @@
         <section class="section" id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Profil</span>
-                    <h2 class="section-title">Über mich</h2>
+                    <span class="section-tag" data-de="Profil" data-en="Profile">Profil</span>
+                    <h2 class="section-title" data-de="Über mich" data-en="About me">Über mich</h2>
                 </div>
 
                 <div class="about-grid">
                     <div class="glass-card about-card">
                         <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
-                        <h3>Studium Wirtschaftsinformatik</h3>
-                        <p>
+                        <h3 data-de="Studium Wirtschaftsinformatik" data-en="Studies in Business Informatics">Studium Wirtschaftsinformatik</h3>
+                        <p data-de="Ich studiere an der Otto-von-Guericke-Universität Magdeburg. Meine Schwerpunkte liegen in IT-Sicherheit und Data Science." data-en="I study at Otto von Guericke University Magdeburg, focusing on IT Security and Data Science.">
                             Ich studiere an der Otto-von-Guericke-Universität Magdeburg. Meine Schwerpunkte liegen in IT-Sicherheit und Data Science.
                         </p>
                     </div>
 
                     <div class="glass-card about-card">
                         <div class="icon-box"><i data-lucide="building-2"></i></div>
-                        <h3>Entwicklung im Public Sector</h3>
-                        <p>
+                        <h3 data-de="Entwicklung im Public Sector" data-en="Public Sector Development">Entwicklung im Public Sector</h3>
+                        <p data-de="Bei der Falcos GmbH baue ich Softwarelösungen. Ich erstelle Web-Plattformen, XÖV-Parser und LLM-Prozessautomatisierungen." data-en="At Falcos GmbH, I build software solutions including web platforms, XÖV parsers, and LLM process automation.">
                             Bei der Falcos GmbH baue ich Softwarelösungen. Ich erstelle Web-Plattformen, XÖV-Parser und LLM-Prozessautomatisierungen.
                         </p>
                     </div>
 
                     <div class="glass-card about-card">
                         <div class="icon-box"><i data-lucide="users"></i></div>
-                        <h3>Lehre & Fachschaftsrat</h3>
-                        <p>
+                        <h3 data-de="Lehre & Fachschaftsrat" data-en="Teaching & Student Council">Lehre & Fachschaftsrat</h3>
+                        <p data-de="Als Tutor unterrichte ich Algorithmen, Datenstrukturen und Mathe. Im Fachschaftsrat betreue ich IT-Systeme und Erstsemester." data-en="As a teaching assistant, I tutor algorithms, data structures, and math. In the student council, I maintain IT systems and organize orientation weeks.">
                             Als Tutor unterrichte ich Algorithmen, Datenstrukturen und Mathe. Im Fachschaftsrat betreue ich IT-Systeme und Erstsemester.
                         </p>
                     </div>
@@ -162,24 +165,24 @@
         <section class="section" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Technologie & Methoden</span>
-                    <h2 class="section-title">Kenntnisse</h2>
+                    <span class="section-tag" data-de="Technologie & Methoden" data-en="Technologies & Methods">Technologie & Methoden</span>
+                    <h2 class="section-title" data-de="Kenntnisse" data-en="Skills">Kenntnisse</h2>
                 </div>
 
                 <div class="skills-wrapper">
                     <div class="glass-card skill-category">
-                        <h3 class="category-title"><i data-lucide="file-code"></i> Sprachen & Datenbanken</h3>
+                        <h3 class="category-title" data-de="Sprachen & Datenbanken" data-en="Languages & Databases"><i data-lucide="file-code"></i> Sprachen & Datenbanken</h3>
                         <div class="skills-grid">
                             <div class="skill-pill">Python</div>
                             <div class="skill-pill">Java</div>
                             <div class="skill-pill">JavaScript / TypeScript</div>
                             <div class="skill-pill">HTML5 & CSS3</div>
-                            <div class="skill-pill">SQL & Datenbanken</div>
+                            <div class="skill-pill">SQL & Databases</div>
                         </div>
                     </div>
 
                     <div class="glass-card skill-category">
-                        <h3 class="category-title"><i data-lucide="server"></i> Web & Self-Hosting</h3>
+                        <h3 class="category-title" data-de="Web & Self-Hosting" data-en="Web & Self-Hosting"><i data-lucide="server"></i> Web & Self-Hosting</h3>
                         <div class="skills-grid">
                             <div class="skill-pill">React & Node.js</div>
                             <div class="skill-pill">Docusaurus & WordPress</div>
@@ -190,7 +193,7 @@
                     </div>
 
                     <div class="glass-card skill-category">
-                        <h3 class="category-title"><i data-lucide="award"></i> Methoden & Zertifikate</h3>
+                        <h3 class="category-title" data-de="Methoden & Zertifikate" data-en="Methods & Certificates"><i data-lucide="award"></i> Methoden & Zertifikate</h3>
                         <div class="skills-grid">
                             <div class="skill-pill">Certified ScrumMaster</div>
                             <div class="skill-pill">FIM-Informationsmanager</div>
@@ -206,14 +209,14 @@
         <section class="section" id="projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Stationen</span>
-                    <h2 class="section-title">Praktische Erfahrungen</h2>
+                    <span class="section-tag" data-de="Stationen" data-en="Milestones">Stationen</span>
+                    <h2 class="section-title" data-de="Praktische Erfahrungen" data-en="Experience & Projects">Praktische Erfahrungen</h2>
                 </div>
 
                 <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">Alle</button>
-                    <button class="filter-btn" data-filter="work">Beruf & Praxis</button>
-                    <button class="filter-btn" data-filter="uni">Uni & Engagement</button>
+                    <button class="filter-btn active" data-filter="all" data-de="Alle" data-en="All">Alle</button>
+                    <button class="filter-btn" data-filter="work" data-de="Beruf & Praxis" data-en="Work & Practice">Beruf & Praxis</button>
+                    <button class="filter-btn" data-filter="uni" data-de="Uni & Engagement" data-en="Uni & Community">Uni & Engagement</button>
                 </div>
 
                 <div class="projects-grid">
@@ -224,8 +227,8 @@
                                 <i data-lucide="external-link"></i>
                             </a>
                         </div>
-                        <h3 class="project-title">Softwareentwickler im Public Sector</h3>
-                        <p class="project-desc">
+                        <h3 class="project-title" data-de="Softwareentwickler im Public Sector" data-en="Public Sector Software Developer">Softwareentwickler im Public Sector</h3>
+                        <p class="project-desc" data-de="Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Automatisierung." data-en="Full-stack web development with WordPress and Docusaurus. Building XÖV-ZUGFeRD invoice parsers and LLM automation scripts.">
                             Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Automatisierung.
                         </p>
                         <div class="project-tags">
@@ -242,14 +245,14 @@
                                 <i data-lucide="external-link"></i>
                             </a>
                         </div>
-                        <h3 class="project-title">Tutorium Algorithmen & Mathe</h3>
-                        <p class="project-desc">
+                        <h3 class="project-title" data-de="Tutorium Algorithmen & Mathe" data-en="Teaching Assistant Algorithms & Math">Tutorium Algorithmen & Mathe</h3>
+                        <p class="project-desc" data-de="Didaktische Leitung von Tutorien für Studierende an der Fakultät für Informatik. Durchführung von Code-Reviews und Vorkursen." data-en="Didactic leadership of tutorials for computer science students. Conducting code reviews and math prep courses.">
                             Didaktische Leitung von Tutorien für Studierende an der Fakultät für Informatik. Durchführung von Code-Reviews und Vorkursen.
                         </p>
                         <div class="project-tags">
                             <span>Algorithmen</span>
                             <span>Code Review</span>
-                            <span>Lehre</span>
+                            <span>Teaching</span>
                         </div>
                     </div>
 
@@ -260,14 +263,14 @@
                                 <i data-lucide="external-link"></i>
                             </a>
                         </div>
-                        <h3 class="project-title">Fachschaftsrat Stellvertreter</h3>
-                        <p class="project-desc">
+                        <h3 class="project-title" data-de="Fachschaftsrat Stellvertreter" data-en="Student Council Representative">Fachschaftsrat Stellvertreter</h3>
+                        <p class="project-desc" data-de="Leitung der Erstsemesterwochen für 150+ Studierende. Betreuung des IT-Adminreferats und Ausbau interner Wikis." data-en="Leading orientation weeks for 150+ students. Managing IT systems and expanding internal knowledge wikis.">
                             Leitung der Erstsemesterwochen für 150+ Studierende. Betreuung des IT-Adminreferats und Ausbau interner Wikis.
                         </p>
                         <div class="project-tags">
                             <span>Organisation</span>
                             <span>IT-Admin</span>
-                            <span>Wiki-Wissen</span>
+                            <span>Wiki Knowledge</span>
                         </div>
                     </div>
                 </div>
@@ -278,8 +281,8 @@
         <section class="section" id="terminal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Konsole</span>
-                    <h2 class="section-title">Interaktive Befehlszeile</h2>
+                    <span class="section-tag" data-de="Konsole" data-en="Console">Konsole</span>
+                    <h2 class="section-title" data-de="Interaktive Befehlszeile" data-en="Interactive Command Line">Interaktive Befehlszeile</h2>
                 </div>
 
                 <div class="glass-card terminal-window">
@@ -294,13 +297,13 @@
                     
                     <div class="terminal-body" id="terminal-output">
                         <p class="terminal-line"><span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$ help</p>
-                        <p class="terminal-info">Wähle einen Befehl aus oder tippe ihn ein:</p>
+                        <p class="terminal-info" data-de="Wähle einen Befehl aus oder tippe ihn ein:" data-en="Select a command or type it in:">Wähle einen Befehl aus oder tippe ihn ein:</p>
                         <p class="terminal-info">Optionen: <span class="cmd-highlight">whoami</span> | <span class="cmd-highlight">skills</span> | <span class="cmd-highlight">erfahrung</span> | <span class="cmd-highlight">kontakt</span> | <span class="cmd-highlight">clear</span></p>
                     </div>
 
                     <div class="terminal-input-row">
                         <span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$&nbsp;
-                        <input type="text" id="terminal-input" placeholder="Befehl eingeben..." autocomplete="off">
+                        <input type="text" id="terminal-input" placeholder="Befehl eingeben..." data-de-placeholder="Befehl eingeben..." data-en-placeholder="Type command..." autocomplete="off">
                     </div>
 
                     <div class="terminal-presets">
@@ -318,18 +321,18 @@
             <div class="container">
                 <div class="glass-card contact-card">
                     <div class="contact-header">
-                        <h2 class="contact-title">Kontakt aufnehmen</h2>
-                        <p class="contact-sub">
+                        <h2 class="contact-title" data-de="Kontakt aufnehmen" data-en="Get in touch">Kontakt aufnehmen</h2>
+                        <p class="contact-sub" data-de="Du möchtest dich vernetzen oder über Projekte sprechen? Schreib mir eine Nachricht!" data-en="Would you like to connect or discuss projects? Send me a message!">
                             Du möchtest dich vernetzen oder über Projekte sprechen? Schreib mir eine Nachricht!
                         </p>
                     </div>
 
                     <div class="contact-actions">
                         <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="btn btn-primary">
-                            <i data-lucide="linkedin"></i> Auf LinkedIn vernetzen
+                            <i data-lucide="linkedin"></i> <span data-de="Auf LinkedIn vernetzen" data-en="Connect on LinkedIn">Auf LinkedIn vernetzen</span>
                         </a>
                         <button id="copy-email-btn" class="btn btn-secondary">
-                            <i data-lucide="copy"></i> E-Mail kopieren
+                            <i data-lucide="copy"></i> <span data-de="E-Mail kopieren" data-en="Copy E-Mail">E-Mail kopieren</span>
                         </button>
                     </div>
                 </div>
@@ -343,7 +346,7 @@
             <div class="footer-links">
                 <a href="https://github.com/emin-giri" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank">LinkedIn</a>
-                <a href="#hero">Nach oben</a>
+                <a href="#hero" data-de="Nach oben" data-en="Back to top">Nach oben</a>
             </div>
         </div>
     </footer>

@@ -25,6 +25,33 @@ Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdebu
 | **Fachschaftsrat FIN** | Stellvertreter & IT-Referat | Organisation für 150+ Studierende, IT-Wartung und Wiki-Aufbau. |
 | **Projekt OSCAR** | Softwareprojekt | Semesterplanungs-Bot für Studierende an der Universität Magdeburg. |
 
+<br/>
+
+<details>
+<summary><b>🇬🇧 Click here for the English version</b></summary>
+
+<br/>
+
+# Hi, I am Emin Girimhanov 👋
+
+I study Business Informatics at Otto von Guericke University Magdeburg. I also work as a Public Sector Software Developer at Falcos GmbH.
+
+## What I do
+
+* I build web applications, Docusaurus sites, and XÖV parsers for public administration.
+* I automate processes using LLMs, AppScripts, and Python.
+* I tutor students in Algorithms, Data Structures, and Mathematics at the Faculty of Computer Science.
+* I serve as a student council representative, organize orientation weeks, and maintain internal wikis.
+* I host open source services including Proxmox, Nextcloud, Paperless, and n8n.
+
+## Skills
+
+* **Languages:** Python, Java, JavaScript, TypeScript, HTML, CSS, SQL
+* **Web & Tools:** React, Node.js, Docusaurus, Git, Proxmox, n8n, 3D Printing (FDM)
+* **Certificates:** Certified ScrumMaster (CSM), FIM Information Manager
+
+</details>
+
 ## GitHub Statistiken
 
 <div align="center">
