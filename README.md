@@ -66,16 +66,17 @@ I study Business Informatics at Otto von Guericke University Magdeburg (GPA 1.6)
 ## GitHub Statistiken
 
 <div align="center">
-  <a href="https://github.com/egirimhanov">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=egirimhanov&show_icons=true&theme=dark&hide_border=true" alt="Emin's GitHub Stats" />
+  <a href="https://github.com/emin-girimhanov">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=emin-girimhanov&show_icons=true&theme=dark&hide_border=true" alt="Emin's GitHub Stats" />
   </a>
-  <a href="https://github.com/egirimhanov">
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=egirimhanov&layout=compact&theme=dark&hide_border=true" alt="Meistnutzte Sprachen" />
+  <a href="https://github.com/emin-girimhanov">
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emin-girimhanov&layout=compact&theme=dark&hide_border=true" alt="Meistnutzte Sprachen" />
   </a>
 </div>
 
 ## Kontakt
 
+* **GitHub:** [github.com/emin-girimhanov](https://github.com/emin-girimhanov)
 * **LinkedIn:** [linkedin.com/in/emin-girimhanov](https://www.linkedin.com/in/emin-girimhanov/)
 * **Mastodon:** [machteburch.social/@emin](https://machteburch.social/@emin)
 * **E-Mail:** emin.girimhanov@posteo.de

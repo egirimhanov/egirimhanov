@@ -1,4 +1,4 @@
-// JavaScript Logik für die Startseite, Impact-Formulierungen & Synonyme im Terminal (100% UTF-8 / Unicode-Sicher)
+// JavaScript Logik für die Startseite & Konsolenbefehle (Nutzername: emin-girimhanov)
 
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle-btn');
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const textHardwareDE = "Hardware & 3D-Druck: \n 1. Autonomer M\u00e4hroboter (Raspberry Pi, Python-Sensorik, 3D-Druck) \n 2. CJD Schulcampus Droy\u00dfig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab";
     const textHardwareEN = "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python sensor control, FDM 3D printing) \n 2. CJD Droy\u00dfig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab";
 
-    const textKontaktDE = "Kontakt: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/egirimhanov";
-    const textKontaktEN = "Contact: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/egirimhanov";
+    const textKontaktDE = "Kontakt: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/emin-girimhanov";
+    const textKontaktEN = "Contact: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/emin-girimhanov";
 
     // Synonym Map to resolve aliases to primary commands
     const aliasMap = {
