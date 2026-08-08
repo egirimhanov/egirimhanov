@@ -136,12 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = "emin.girimhanov@posteo.de";
             navigator.clipboard.writeText(email).then(() => {
                 const originalHTML = copyEmailBtn.innerHTML;
-                copyEmailBtn.innerHTML = `<i data-lucide="check"></i> ${currentLang === 'de' ? 'Kopiert!' : 'Copied!'}`;
-                if (window.lucide) lucide.createIcons();
+                copyEmailBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> ${currentLang === 'de' ? 'Kopiert!' : 'Copied!'}`;
                 
                 setTimeout(() => {
                     copyEmailBtn.innerHTML = originalHTML;
-                    if (window.lucide) lucide.createIcons();
                 }, 2000);
             });
         });
