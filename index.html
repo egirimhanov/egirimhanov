@@ -3,10 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Persönliche Webseite von Emin Girimhanov. Wirtschaftsinformatik-Student an der OVGU Magdeburg und Softwareentwickler im Public Sector.">
-    <meta name="author" content="Emin Girimhanov">
-    <title>Emin Girimhanov | Softwareentwickler & Wirtschaftsinformatik</title>
     
+    <!-- Primary SEO Meta Tags -->
+    <title>Emin Girimhanov | Softwareentwickler & Wirtschaftsinformatik Magdeburg</title>
+    <meta name="description" content="Offizielle Webseite von Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student an der OVGU Magdeburg, Softwareentwickler bei Falcos GmbH im Public Sector und e-fellows.net Stipendiat.">
+    <meta name="keywords" content="Emin Girimhanov, Wirtschaftsinformatik, OVGU Magdeburg, Falcos GmbH, Softwareentwickler, Public Sector, Python, Java, TypeScript, Proxmox, 3D-Druck, Certified ScrumMaster, Magdeburg">
+    <meta name="author" content="Emin Girimhanov">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://egirimhanov.github.io/">
+
+    <!-- Geographic Meta Tags (GEO / Magdeburg, Germany) -->
+    <meta name="geo.region" content="DE-ST">
+    <meta name="geo.placename" content="Magdeburg">
+    <meta name="geo.position" content="52.120533;11.627624">
+    <meta name="ICBM" content="52.120533, 11.627624">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Emin Girimhanov | Softwareentwickler & Wirtschaftsinformatik Magdeburg">
+    <meta property="og:description" content="Wirtschaftsinformatik OVGU Magdeburg & Softwareentwickler bei Falcos GmbH. Schwerpunkte: Full-Stack, Public Sector, IT-Sicherheit & FOSS.">
+    <meta property="og:url" content="https://egirimhanov.github.io/">
+    <meta property="og:image" content="https://github.com/egirimhanov.png">
+    <meta property="profile:first_name" content="Emin">
+    <meta property="profile:last_name" content="Girimhanov">
+    <meta property="profile:username" content="egirimhanov">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emin Girimhanov | Softwareentwickler & Wirtschaftsinformatik">
+    <meta name="twitter:description" content="Portfolio und Projekte von Emin Girimhanov (OVGU Magdeburg, Falcos GmbH, e-fellows Stipendiat).">
+    <meta name="twitter:image" content="https://github.com/egirimhanov.png">
+
+    <!-- Structured Data (JSON-LD for GEO & AI Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emin Girimhanov",
+      "url": "https://egirimhanov.github.io/",
+      "image": "https://github.com/egirimhanov.png",
+      "jobTitle": "Softwareentwickler im Public Sector",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Falcos GmbH"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Otto-von-Guericke-Universität Magdeburg"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Magdeburg",
+        "addressCountry": "Germany"
+      },
+      "email": "mailto:emin.girimhanov@posteo.de",
+      "sameAs": [
+        "https://www.linkedin.com/in/emin-girimhanov/",
+        "https://github.com/egirimhanov",
+        "https://github.com/emin-giri",
+        "https://machteburch.social/@emin"
+      ],
+      "knowsAbout": [
+        "Software Development",
+        "Business Informatics",
+        "Python",
+        "Java",
+        "TypeScript",
+        "Public Sector IT",
+        "Proxmox",
+        "3D Printing",
+        "Scrum"
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,78 +88,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ambient-light">
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+    <div class="ambient-light" aria-hidden="true">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation Header -->
+    <header class="navbar" role="banner">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-accent">&lt;</span>Emin Girimhanov<span class="logo-accent"> /&gt;</span>
+            <a href="#" class="nav-logo" aria-label="Emin Girimhanov Startseite">
+                <span class="logo-accent" aria-hidden="true">&lt;</span>Emin Girimhanov<span class="logo-accent" aria-hidden="true"> /&gt;</span>
             </a>
             
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link" data-de="Über mich" data-en="About me">Über mich</a></li>
-                <li><a href="#skills" class="nav-link" data-de="Kenntnisse" data-en="Skills">Kenntnisse</a></li>
-                <li><a href="#projects" class="nav-link" data-de="Erfahrungen & Projekte" data-en="Experience & Projects">Erfahrungen & Projekte</a></li>
-                <li><a href="#terminal" class="nav-link" data-de="Konsole" data-en="Console">Konsole</a></li>
-                <li><a href="#contact" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
-            </ul>
+            <nav aria-label="Hauptnavigation">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link" data-de="Über mich" data-en="About me">Über mich</a></li>
+                    <li><a href="#skills" class="nav-link" data-de="Kenntnisse" data-en="Skills">Kenntnisse</a></li>
+                    <li><a href="#projects" class="nav-link" data-de="Erfahrungen & Projekte" data-en="Experience & Projects">Erfahrungen & Projekte</a></li>
+                    <li><a href="#terminal" class="nav-link" data-de="Konsole" data-en="Console">Konsole</a></li>
+                    <li><a href="#contact" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+                </ul>
+            </nav>
 
             <div class="nav-actions">
-                <button id="lang-toggle-btn" class="btn btn-secondary btn-sm">
-                    <i data-lucide="globe"></i> <span id="lang-label">EN</span>
+                <button id="lang-toggle-btn" class="btn btn-secondary btn-sm" aria-label="Sprache wechseln / Switch Language">
+                    <i data-lucide="globe" aria-hidden="true"></i> <span id="lang-label">EN</span>
                 </button>
-                <a href="https://github.com/egirimhanov" target="_blank" class="btn btn-secondary btn-sm">
-                    <i data-lucide="github"></i> GitHub
+                <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Emin Girimhanov GitHub Profil öffnen">
+                    <i data-lucide="github" aria-hidden="true"></i> GitHub
                 </a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero-section" id="hero">
+        <section class="hero-section" id="hero" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="status-badge">
-                        <span class="pulse-dot"></span>
+                    <div class="status-badge" role="status">
+                        <span class="pulse-dot" aria-hidden="true"></span>
                         <span data-de="Softwareentwickler & Wirtschaftsinformatiker" data-en="Software Developer & Business Informatics Student">Softwareentwickler & Wirtschaftsinformatiker</span>
                     </div>
 
-                    <h1 class="hero-title">
+                    <h1 class="hero-title" id="hero-title">
                         <span data-de="Hallo, ich bin" data-en="Hello, I am">Hallo, ich bin</span> <span class="gradient-text">Emin Girimhanov</span>.
                     </h1>
 
-                    <p class="hero-subtitle" data-de="Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Software im Public Sector." data-en="I study Business Informatics at OVGU Magdeburg. At Falcos GmbH, I develop software for the public sector.">
-                        Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Software im Public Sector.
+                    <p class="hero-subtitle" data-de="Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Softwarelösungen im Public Sector." data-en="I study Business Informatics at OVGU Magdeburg. At Falcos GmbH, I develop software solutions for the public sector.">
+                        Ich studiere Wirtschaftsinformatik an der OVGU Magdeburg. Bei der Falcos GmbH entwickle ich Softwarelösungen im Public Sector.
                     </p>
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            <i data-lucide="briefcase"></i> <span data-de="Projekte ansehen" data-en="View Projects">Projekte ansehen</span>
+                            <i data-lucide="briefcase" aria-hidden="true"></i> <span data-de="Projekte ansehen" data-en="View Projects">Projekte ansehen</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="btn btn-outline">
-                            <i data-lucide="linkedin"></i> LinkedIn
+                        <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn
                         </a>
                     </div>
 
-                    <div class="hero-stats">
-                        <div class="stat-item">
+                    <div class="hero-stats" role="list">
+                        <div class="stat-item" role="listitem">
                             <span class="stat-number">OVGU</span>
-                            <span class="stat-label" data-de="B.Sc. Wirtschaftsinformatik" data-en="B.Sc. Business Informatics">B.Sc. Wirtschaftsinformatik</span>
+                            <span class="stat-label" data-de="B.Sc. Wirtschaftsinformatik (Note 1,6)" data-en="B.Sc. Business Informatics (GPA 1.6)">B.Sc. Wirtschaftsinformatik (Note 1,6)</span>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item" role="listitem">
                             <span class="stat-number">Falcos GmbH</span>
                             <span class="stat-label" data-de="Public Sector Dev" data-en="Public Sector Dev">Public Sector Dev</span>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">CSM</span>
-                            <span class="stat-label" data-de="Certified ScrumMaster" data-en="Certified ScrumMaster">Certified ScrumMaster</span>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item" role="listitem">
+                            <span class="stat-number">e-fellows.net</span>
+                            <span class="stat-label" data-de="Stipendiat" data-en="Scholarship Holder">Stipendiat</span>
                         </div>
                     </div>
                 </div>
@@ -97,27 +172,27 @@
                 <div class="hero-visual">
                     <div class="glass-card profile-card">
                         <div class="avatar-wrapper">
-                            <div class="avatar-glow"></div>
-                            <img src="https://github.com/egirimhanov.png" alt="Emin Girimhanov Avatar" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Emin+Girimhanov&background=8B5CF6&color=fff&size=200'">
+                            <div class="avatar-glow" aria-hidden="true"></div>
+                            <img src="https://github.com/egirimhanov.png" alt="Porträtfoto von Emin Girimhanov" class="avatar-img" width="130" height="130" onerror="this.src='https://ui-avatars.com/api/?name=Emin+Girimhanov&background=8B5CF6&color=fff&size=200'">
                         </div>
                         <h2 class="profile-name">Emin Girimhanov</h2>
                         <p class="profile-handle" data-de="Magdeburg, Deutschland" data-en="Magdeburg, Germany">Magdeburg, Deutschland</p>
                         
-                        <div class="badge-list">
-                            <span class="tech-badge"><i data-lucide="code"></i> Full-Stack</span>
-                            <span class="tech-badge"><i data-lucide="cpu"></i> 3D-Druck & Hardware</span>
-                            <span class="tech-badge"><i data-lucide="server"></i> FOSS & Proxmox</span>
+                        <div class="badge-list" aria-label="Auszeichnungen und Fertigkeiten">
+                            <span class="tech-badge"><i data-lucide="award" aria-hidden="true"></i> e-fellows Stipendiat</span>
+                            <span class="tech-badge"><i data-lucide="code" aria-hidden="true"></i> Full-Stack</span>
+                            <span class="tech-badge"><i data-lucide="server" aria-hidden="true"></i> FOSS & Proxmox</span>
                         </div>
 
-                        <div class="social-row">
-                            <a href="https://github.com/egirimhanov" target="_blank" aria-label="GitHub" class="social-icon">
-                                <i data-lucide="github"></i>
+                        <div class="social-row" aria-label="Social Media Profile">
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profil von Emin Girimhanov" class="social-icon">
+                                <i data-lucide="github" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" aria-label="LinkedIn" class="social-icon">
-                                <i data-lucide="linkedin"></i>
+                            <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profil von Emin Girimhanov" class="social-icon">
+                                <i data-lucide="linkedin" aria-hidden="true"></i>
                             </a>
-                            <a href="mailto:emin.girimhanov@posteo.de" aria-label="E-Mail" class="social-icon">
-                                <i data-lucide="mail"></i>
+                            <a href="mailto:emin.girimhanov@posteo.de" aria-label="E-Mail an Emin Girimhanov senden" class="social-icon">
+                                <i data-lucide="mail" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -126,80 +201,79 @@
         </section>
 
         <!-- About Section -->
-        <section class="section" id="about">
+        <section class="section" id="about" aria-labelledby="about-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag" data-de="Profil" data-en="Profile">Profil</span>
-                    <h2 class="section-title" data-de="Über mich" data-en="About me">Über mich</h2>
+                    <h2 class="section-title" id="about-title" data-de="Über mich & Auszeichnungen" data-en="About Me & Awards">Über mich & Auszeichnungen</h2>
                 </div>
 
                 <div class="about-grid">
-                    <div class="glass-card about-card">
-                        <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
-                        <h3 data-de="Studium Wirtschaftsinformatik" data-en="Studies in Business Informatics">Studium Wirtschaftsinformatik</h3>
-                        <p data-de="Ich studiere an der Otto-von-Guericke-Universität Magdeburg. Meine Schwerpunkte liegen in IT-Sicherheit und Data Science." data-en="I study at Otto von Guericke University Magdeburg, focusing on IT Security and Data Science.">
-                            Ich studiere an der Otto-von-Guericke-Universität Magdeburg. Meine Schwerpunkte liegen in IT-Sicherheit und Data Science.
+                    <article class="glass-card about-card">
+                        <div class="icon-box" aria-hidden="true"><i data-lucide="graduation-cap"></i></div>
+                        <h3 data-de="Studium Wirtschaftsinformatik" data-en="Business Informatics Studies">Studium Wirtschaftsinformatik</h3>
+                        <p data-de="Ich studiere an der Otto-von-Guericke-Universität Magdeburg mit Schnitt 1,6. Meine Schwerpunkte sind IT-Sicherheit und Data Science." data-en="I study at OVGU Magdeburg with a 1.6 GPA. My focus areas are IT Security and Data Science.">
+                            Ich studiere an der Otto-von-Guericke-Universität Magdeburg mit Schnitt 1,6. Meine Schwerpunkte sind IT-Sicherheit und Data Science.
                         </p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card about-card">
-                        <div class="icon-box"><i data-lucide="building-2"></i></div>
+                    <article class="glass-card about-card">
+                        <div class="icon-box" aria-hidden="true"><i data-lucide="building-2"></i></div>
                         <h3 data-de="Entwicklung im Public Sector" data-en="Public Sector Development">Entwicklung im Public Sector</h3>
-                        <p data-de="Bei der Falcos GmbH baue ich Softwarelösungen. Ich erstelle Web-Plattformen, XÖV-Parser und LLM-Prozessautomatisierungen." data-en="At Falcos GmbH, I build software solutions including web platforms, XÖV parsers, and LLM process automation.">
-                            Bei der Falcos GmbH baue ich Softwarelösungen. Ich erstelle Web-Plattformen, XÖV-Parser und LLM-Prozessautomatisierungen.
+                        <p data-de="Bei der Falcos GmbH erstelle ich Webanwendungen, Docusaurus-Seiten, XÖV-Validierer und Prozessautomatisierungen mit LLMs." data-en="At Falcos GmbH, I build web applications, Docusaurus sites, XÖV validators, and LLM process automation.">
+                            Bei der Falcos GmbH erstelle ich Webanwendungen, Docusaurus-Seiten, XÖV-Validierer und Prozessautomatisierungen mit LLMs.
                         </p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card about-card">
-                        <div class="icon-box"><i data-lucide="printer"></i></div>
-                        <h3 data-de="Hardware, 3D-Druck & FOSS" data-en="Hardware, 3D Printing & FOSS">Hardware, 3D-Druck & FOSS</h3>
-                        <p data-de="Ich erstelle CAD-Modelle, baue 3D-Druck-Projekte mit Raspberry Pi und betreibe eigene Self-Hosting-Server mit Proxmox." data-en="I create CAD models, build Raspberry Pi 3D printing projects, and run my own self-hosted Proxmox server lab.">
-                            Ich erstelle CAD-Modelle, baue 3D-Druck-Projekte mit Raspberry Pi und betreibe eigene Self-Hosting-Server mit Proxmox.
+                    <article class="glass-card about-card">
+                        <div class="icon-box" aria-hidden="true"><i data-lucide="award"></i></div>
+                        <h3 data-de="Stipendium & Auszeichnungen" data-en="Scholarships & Awards">Stipendium & Auszeichnungen</h3>
+                        <p data-de="Stipendiat von e-fellows.net (seit 09.2025). Träger des Sonderpreises für Digitalisierung und zertifizierter ScrumMaster." data-en="e-fellows.net scholar since 09/2025. Winner of the Special Award for Digitalization and Certified ScrumMaster.">
+                            Stipendiat von e-fellows.net (seit 09.2025). Träger des Sonderpreises für Digitalisierung und zertifizierter ScrumMaster.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section class="section" id="skills">
+        <section class="section" id="skills" aria-labelledby="skills-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag" data-de="Technologie & Methoden" data-en="Technologies & Methods">Technologie & Methoden</span>
-                    <h2 class="section-title" data-de="Kenntnisse" data-en="Skills">Kenntnisse</h2>
+                    <h2 class="section-title" id="skills-title" data-de="Kenntnisse" data-en="Skills">Kenntnisse</h2>
                 </div>
 
                 <div class="skills-wrapper">
                     <div class="glass-card skill-category">
-                        <h3 class="category-title" data-de="Sprachen & Datenbanken" data-en="Languages & Databases"><i data-lucide="file-code"></i> Sprachen & Datenbanken</h3>
-                        <div class="skills-grid">
-                            <div class="skill-pill">Python</div>
-                            <div class="skill-pill">Java</div>
-                            <div class="skill-pill">JavaScript / TypeScript</div>
-                            <div class="skill-pill">HTML5 & CSS3</div>
-                            <div class="skill-pill">SQL & Databases</div>
+                        <h3 class="category-title" data-de="Sprachen & Datenbanken" data-en="Languages & Databases"><i data-lucide="file-code" aria-hidden="true"></i> Sprachen & Datenbanken</h3>
+                        <div class="skills-grid" role="list">
+                            <div class="skill-pill" role="listitem">Python</div>
+                            <div class="skill-pill" role="listitem">Java</div>
+                            <div class="skill-pill" role="listitem">JavaScript / TypeScript</div>
+                            <div class="skill-pill" role="listitem">HTML5 & CSS3</div>
+                            <div class="skill-pill" role="listitem">SQL & Databases</div>
                         </div>
                     </div>
 
                     <div class="glass-card skill-category">
-                        <h3 class="category-title" data-de="Web & Self-Hosting" data-en="Web & Self-Hosting"><i data-lucide="server"></i> Web & Self-Hosting</h3>
-                        <div class="skills-grid">
-                            <div class="skill-pill">React & Node.js</div>
-                            <div class="skill-pill">Docusaurus & WordPress</div>
-                            <div class="skill-pill">Proxmox VE & n8n</div>
-                            <div class="skill-pill">Nextcloud & Paperless</div>
-                            <div class="skill-pill">Git & CI/CD</div>
+                        <h3 class="category-title" data-de="Web & Self-Hosting" data-en="Web & Self-Hosting"><i data-lucide="server" aria-hidden="true"></i> Web & Self-Hosting</h3>
+                        <div class="skills-grid" role="list">
+                            <div class="skill-pill" role="listitem">React & Node.js</div>
+                            <div class="skill-pill" role="listitem">Docusaurus & WordPress</div>
+                            <div class="skill-pill" role="listitem">Proxmox VE & n8n</div>
+                            <div class="skill-pill" role="listitem">Nextcloud & Paperless</div>
+                            <div class="skill-pill" role="listitem">Git & CI/CD</div>
                         </div>
                     </div>
 
                     <div class="glass-card skill-category">
-                        <h3 class="category-title" data-de="Maker & Zertifikate" data-en="Maker & Certificates"><i data-lucide="award"></i> Maker & Zertifikate</h3>
-                        <div class="skills-grid">
-                            <div class="skill-pill">3D-Druck (FDM)</div>
-                            <div class="skill-pill">CAD-Modellierung</div>
-                            <div class="skill-pill">Raspberry Pi</div>
-                            <div class="skill-pill">Certified ScrumMaster</div>
-                            <div class="skill-pill">FIM-Informationsmanager</div>
+                        <h3 class="category-title" data-de="Methoden & Zertifikate" data-en="Methods & Certificates"><i data-lucide="award" aria-hidden="true"></i> Methoden & Zertifikate</h3>
+                        <div class="skills-grid" role="list">
+                            <div class="skill-pill" role="listitem">Certified ScrumMaster</div>
+                            <div class="skill-pill" role="listitem">FIM-Informationsmanager</div>
+                            <div class="skill-pill" role="listitem">XÖV-Modellierung</div>
+                            <div class="skill-pill" role="listitem">CAD & 3D-Druck (FDM)</div>
                         </div>
                     </div>
                 </div>
@@ -207,122 +281,122 @@
         </section>
 
         <!-- Projects / Experience Section -->
-        <section class="section" id="projects">
+        <section class="section" id="projects" aria-labelledby="projects-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag" data-de="Portfolio" data-en="Portfolio">Portfolio</span>
-                    <h2 class="section-title" data-de="Erfahrungen & Projekte" data-en="Experience & Projects">Erfahrungen & Projekte</h2>
+                    <h2 class="section-title" id="projects-title" data-de="Erfahrungen & Projekte" data-en="Experience & Projects">Erfahrungen & Projekte</h2>
                 </div>
 
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all" data-de="Alle" data-en="All">Alle</button>
-                    <button class="filter-btn" data-filter="work" data-de="Beruf & Software" data-en="Software & Work">Beruf & Software</button>
-                    <button class="filter-btn" data-filter="hardware" data-de="3D-Druck & Hardware" data-en="3D Printing & Hardware">3D-Druck & Hardware</button>
-                    <button class="filter-btn" data-filter="uni" data-de="Uni & Engagement" data-en="Uni & Community">Uni & Engagement</button>
+                <div class="project-filters" role="tablist" aria-label="Projektfilter">
+                    <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all" data-de="Alle" data-en="All">Alle</button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="work" data-de="Beruf & Software" data-en="Software & Work">Beruf & Software</button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="engagement" data-de="Engagement & Consulting" data-en="Engagement & Consulting">Engagement & Consulting</button>
+                    <button class="filter-btn" role="tab" aria-selected="false" data-filter="hardware" data-de="3D-Druck & Hardware" data-en="3D Printing & Hardware">3D-Druck & Hardware</button>
                 </div>
 
                 <div class="projects-grid">
                     <!-- Project 1: Falcos GmbH -->
-                    <div class="glass-card project-card" data-category="work">
+                    <article class="glass-card project-card" data-category="work">
                         <div class="project-header">
-                            <div class="project-type"><i data-lucide="briefcase"></i> Falcos GmbH</div>
-                            <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
+                            <div class="project-type"><i data-lucide="briefcase" aria-hidden="true"></i> Falcos GmbH</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Falcos GmbH Projekt auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
                             </a>
                         </div>
                         <h3 class="project-title" data-de="Softwareentwickler im Public Sector" data-en="Public Sector Software Developer">Softwareentwickler im Public Sector</h3>
-                        <p class="project-desc" data-de="Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Automatisierung." data-en="Full-stack web development with WordPress and Docusaurus. Building XÖV-ZUGFeRD invoice parsers and LLM automation scripts.">
-                            Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Automatisierung.
+                        <p class="project-desc" data-de="Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Prozessautomatisierung." data-en="Full-stack web development with WordPress and Docusaurus. Building XÖV-ZUGFeRD invoice parsers and LLM automation scripts.">
+                            Full-Stack Webentwicklung mit WordPress und Docusaurus. Entwicklung von XÖV-ZUGFeRD Rechnungs-Parsern und LLM-Prozessautomatisierung.
                         </p>
                         <div class="project-tags">
                             <span>Web Dev</span>
                             <span>LLM / AppScripts</span>
                             <span>XÖV Standard</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 2: Autonomer Mähroboter -->
-                    <div class="glass-card project-card" data-category="hardware">
+                    <!-- Project 2: SIDUM e.V. Consulting -->
+                    <article class="glass-card project-card" data-category="engagement">
                         <div class="project-header">
-                            <div class="project-type"><i data-lucide="cpu"></i> Hardware Project</div>
-                            <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
+                            <div class="project-type"><i data-lucide="trending-up" aria-hidden="true"></i> SIDUM e.V.</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="SIDUM Consulting Projekt auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <h3 class="project-title" data-de="Autonomer Mähroboter" data-en="Autonomous Robotic Lawn Mower">Autonomer Mähroboter</h3>
-                        <p class="project-desc" data-de="Abschlussarbeit im Zweierteam. Konstruktion und Bau eines Mähroboters mit Raspberry Pi, Python-Steuerung und 3D-Druck-Komponenten." data-en="Team final project. Designing and building an autonomous lawn mower using Raspberry Pi, Python motor control, and 3D printed custom parts.">
-                            Abschlussarbeit im Zweierteam. Konstruktion und Bau eines Mähroboters mit Raspberry Pi, Python-Steuerung und 3D-Druck-Komponenten.
+                        <h3 class="project-title" data-de="Studentische Unternehmensberatung" data-en="Student Management Consulting">Studentische Unternehmensberatung</h3>
+                        <p class="project-desc" data-de="Mitglied im Ressort Finanzen & Recht. Mitarbeit an Kreditentscheidungs-Use-Cases (Expected-Goals-Modell mit d-fine) und PwC GenAI Masterclass." data-en="Finance & Legal Department. Working on credit decisioning use cases (Expected Goals model with d-fine) and PwC GenAI Masterclass.">
+                            Mitglied im Ressort Finanzen & Recht. Mitarbeit an Kreditentscheidungs-Use-Cases (Expected-Goals-Modell mit d-fine) und PwC GenAI Masterclass.
                         </p>
                         <div class="project-tags">
-                            <span>Raspberry Pi</span>
-                            <span>Python</span>
-                            <span>3D-Druck</span>
+                            <span>Finanzen & Recht</span>
+                            <span>GenAI / PwC</span>
+                            <span>d-fine Workshop</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 3: Schulcampus Droyßig CAD & 3D-Druck -->
-                    <div class="glass-card project-card" data-category="hardware">
+                    <!-- Project 3: Fachschaftsrat FIN -->
+                    <article class="glass-card project-card" data-category="engagement">
                         <div class="project-header">
-                            <div class="project-type"><i data-lucide="award"></i> Award Winner</div>
-                            <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
+                            <div class="project-type"><i data-lucide="users" aria-hidden="true"></i> Fachschaftsrat FIN</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Fachschaftsrat Projekt auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <h3 class="project-title" data-de="Schulcampus 3D-Modell (1:150)" data-en="School Campus 3D Model (1:150)">Schulcampus 3D-Modell (1:150)</h3>
-                        <p class="project-desc" data-de="Eigeninitiierte CAD-Modellierung und 3D-Druck des CJD Schulcampus Droyßig. Ausgezeichnet mit dem Sonderpreis für Digitalisierung." data-en="CAD modeling and 3D printing of the CJD Droyßig school campus (1:150 scale). Winner of the Special Award for Digitalization.">
-                            Eigeninitiierte CAD-Modellierung und 3D-Druck des CJD Schulcampus Droyßig. Ausgezeichnet mit dem Sonderpreis für Digitalisierung.
-                        </p>
-                        <div class="project-tags">
-                            <span>CAD</span>
-                            <span>3D-Druck (FDM)</span>
-                            <span>Digitalisierungpreis</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Tutorium FIN -->
-                    <div class="glass-card project-card" data-category="uni">
-                        <div class="project-header">
-                            <div class="project-type"><i data-lucide="book-open"></i> FIN OVGU</div>
-                            <a href="https://github.com/egirimhanov" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
-                            </a>
-                        </div>
-                        <h3 class="project-title" data-de="Tutorium Algorithmen & Mathe" data-en="Teaching Assistant Algorithms & Math">Tutorium Algorithmen & Mathe</h3>
-                        <p class="project-desc" data-de="Didaktische Leitung von Tutorien für Studierende an der Fakultät für Informatik. Durchführung von Code-Reviews und Vorkursen." data-en="Didactic leadership of tutorials for computer science students. Conducting code reviews and math prep courses.">
-                            Didaktische Leitung von Tutorien für Studierende an der Fakultät für Informatik. Durchführung von Code-Reviews und Vorkursen.
-                        </p>
-                        <div class="project-tags">
-                            <span>Algorithmen</span>
-                            <span>Code Review</span>
-                            <span>Teaching</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: Fachschaftsrat -->
-                    <div class="glass-card project-card" data-category="uni">
-                        <div class="project-header">
-                            <div class="project-type"><i data-lucide="users"></i> Fachschaftsrat FIN</div>
-                            <a href="https://github.com/egirimhanov" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
-                            </a>
-                        </div>
-                        <h3 class="project-title" data-de="Fachschaftsrat Stellvertreter" data-en="Student Council Representative">Fachschaftsrat Stellvertreter</h3>
-                        <p class="project-desc" data-de="Leitung der Erstsemesterwochen für 150+ Studierende. Betreuung des IT-Adminreferats und Ausbau interner Wikis." data-en="Leading orientation weeks for 150+ students. Managing IT systems and expanding internal knowledge wikis.">
-                            Leitung der Erstsemesterwochen für 150+ Studierende. Betreuung des IT-Adminreferats und Ausbau interner Wikis.
+                        <h3 class="project-title" data-de="Stellvertreter im Fachschaftsrat" data-en="Student Council Representative">Stellvertreter im Fachschaftsrat</h3>
+                        <p class="project-desc" data-de="Leitung der Erstsemesterwochen für 150+ Studierende. Ausbau des internen Wikis zur Wissenssicherung und Betreuung der IT-Systeme." data-en="Led orientation weeks for 150+ students. Expanded internal wiki for knowledge management and maintained IT systems.">
+                            Leitung der Erstsemesterwochen für 150+ Studierende. Ausbau des internen Wikis zur Wissenssicherung und Betreuung der IT-Systeme.
                         </p>
                         <div class="project-tags">
                             <span>Organisation</span>
                             <span>IT-Admin</span>
                             <span>Wiki Knowledge</span>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Project 4: Autonomer Mähroboter -->
+                    <article class="glass-card project-card" data-category="hardware">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="cpu" aria-hidden="true"></i> Hardware Project</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Mähroboter Projekt auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title" data-de="Autonomer Mähroboter" data-en="Autonomous Robotic Lawn Mower">Autonomer Mähroboter</h3>
+                        <p class="project-desc" data-de="Abschlussarbeit im Zweierteam. Konstruktion eines autonom steuerbaren Mähroboters mit Raspberry Pi, Python-Motorsteuerung und 3D-Druck-Bauteilen." data-en="Team final project. Building an autonomous lawn mower using Raspberry Pi, Python motor control, and custom 3D printed components.">
+                            Abschlussarbeit im Zweierteam. Konstruktion eines autonom steuerbaren Mähroboters mit Raspberry Pi, Python-Motorsteuerung und 3D-Druck-Bauteilen.
+                        </p>
+                        <div class="project-tags">
+                            <span>Raspberry Pi</span>
+                            <span>Python</span>
+                            <span>3D-Druck (FDM)</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Schulcampus Droyßig CAD & 3D-Druck -->
+                    <article class="glass-card project-card" data-category="hardware">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="award" aria-hidden="true"></i> Digitalisierungspreis</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="3D-Modell Projekt auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title" data-de="Schulcampus 3D-Modell (1:150)" data-en="School Campus 3D Model (1:150)">Schulcampus 3D-Modell (1:150)</h3>
+                        <p class="project-desc" data-de="Eigeninitiierte CAD-Modellierung und 3D-Druck des CJD Schulcampus Droyßig im Zweierteam. Ausgezeichnet mit dem Sonderpreis für Digitalisierung." data-en="CAD modeling and 3D printing of CJD Droyßig school campus (1:150 scale). Awarded the Special Prize for Digitalization.">
+                            Eigeninitiierte CAD-Modellierung und 3D-Druck des CJD Schulcampus Droyßig im Zweierteam. Ausgezeichnet mit dem Sonderpreis für Digitalisierung.
+                        </p>
+                        <div class="project-tags">
+                            <span>CAD</span>
+                            <span>3D-Druck (FDM)</span>
+                            <span>Award Winner</span>
+                        </div>
+                    </article>
 
                     <!-- Project 6: OSCAR Bot -->
-                    <div class="glass-card project-card" data-category="work">
+                    <article class="glass-card project-card" data-category="work">
                         <div class="project-header">
-                            <div class="project-type"><i data-lucide="folder-git-2"></i> Project OSCAR</div>
-                            <a href="https://github.com/egirimhanov" target="_blank" class="project-link">
-                                <i data-lucide="external-link"></i>
+                            <div class="project-type"><i data-lucide="folder-git-2" aria-hidden="true"></i> Project OSCAR</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="OSCAR Bot auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
                             </a>
                         </div>
                         <h3 class="project-title" data-de="OSCAR Semesterplanungs-Bot" data-en="OSCAR Academic Roadmapper Bot">OSCAR Semesterplanungs-Bot</h3>
@@ -334,22 +408,41 @@
                             <span>Automation</span>
                             <span>OVGU</span>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Project 7: Klassensprecher Engagement -->
+                    <article class="glass-card project-card" data-category="engagement">
+                        <div class="project-header">
+                            <div class="project-type"><i data-lucide="user-check" aria-hidden="true"></i> Schülersprecher</div>
+                            <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Engagement Informationen auf GitHub anzeigen">
+                                <i data-lucide="github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <h3 class="project-title" data-de="Gewählter Klassensprecher" data-en="Elected Student Representative">Gewählter Klassensprecher</h3>
+                        <p class="project-desc" data-de="Langjährige Vertretung von Schülerinteressen am CJD Gymnasium. Organisation von Schulveranstaltungen und Vermittlung im Kollegium." data-en="Long-term representation of student interests at CJD Gymnasium. Event organization and mediation between students and faculty.">
+                            Langjährige Vertretung von Schülerinteressen am CJD Gymnasium. Organisation von Schulveranstaltungen und Vermittlung im Kollegium.
+                        </p>
+                        <div class="project-tags">
+                            <span>Vertretung</span>
+                            <span>Event-Orga</span>
+                            <span>Vermittlung</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Terminal Section -->
-        <section class="section" id="terminal">
+        <section class="section" id="terminal" aria-labelledby="terminal-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag" data-de="Konsole" data-en="Console">Konsole</span>
-                    <h2 class="section-title" data-de="Interaktive Befehlszeile" data-en="Interactive Command Line">Interaktive Befehlszeile</h2>
+                    <h2 class="section-title" id="terminal-title" data-de="Interaktive Befehlszeile" data-en="Interactive Command Line">Interaktive Befehlszeile</h2>
                 </div>
 
-                <div class="glass-card terminal-window">
+                <div class="glass-card terminal-window" role="region" aria-label="Developer Terminal Simulator">
                     <div class="terminal-header">
-                        <div class="terminal-buttons">
+                        <div class="terminal-buttons" aria-hidden="true">
                             <span class="term-btn term-close"></span>
                             <span class="term-btn term-min"></span>
                             <span class="term-btn term-max"></span>
@@ -357,21 +450,21 @@
                         <span class="terminal-title">bash: emin.girimhanov</span>
                     </div>
                     
-                    <div class="terminal-body" id="terminal-output">
+                    <div class="terminal-body" id="terminal-output" aria-live="polite">
                         <p class="terminal-line"><span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$ help</p>
                         <p class="terminal-info" data-de="Wähle einen Befehl aus oder tippe ihn ein:" data-en="Select a command or type it in:">Wähle einen Befehl aus oder tippe ihn ein:</p>
-                        <p class="terminal-info">Optionen: <span class="cmd-highlight">whoami</span> | <span class="cmd-highlight">skills</span> | <span class="cmd-highlight">hardware</span> | <span class="cmd-highlight">erfahrung</span> | <span class="cmd-highlight">kontakt</span> | <span class="cmd-highlight">clear</span></p>
+                        <p class="terminal-info">Optionen: <span class="cmd-highlight">whoami</span> | <span class="cmd-highlight">skills</span> | <span class="cmd-highlight">engagement</span> | <span class="cmd-highlight">erfahrung</span> | <span class="cmd-highlight">kontakt</span> | <span class="cmd-highlight">clear</span></p>
                     </div>
 
                     <div class="terminal-input-row">
-                        <span class="prompt-user">emin</span>@<span class="prompt-host">ovgu</span>:<span class="prompt-path">~</span>$&nbsp;
-                        <input type="text" id="terminal-input" placeholder="Befehl eingeben..." data-de-placeholder="Befehl eingeben..." data-en-placeholder="Type command..." autocomplete="off">
+                        <span class="prompt-user" aria-hidden="true">emin</span><span aria-hidden="true">@</span><span class="prompt-host" aria-hidden="true">ovgu</span><span aria-hidden="true">:</span><span class="prompt-path" aria-hidden="true">~</span><span aria-hidden="true">$&nbsp;</span>
+                        <input type="text" id="terminal-input" aria-label="Terminal Befehlseingabe" placeholder="Befehl eingeben..." data-de-placeholder="Befehl eingeben..." data-en-placeholder="Type command..." autocomplete="off">
                     </div>
 
-                    <div class="terminal-presets">
+                    <div class="terminal-presets" aria-label="Vordefinierte Befehle">
                         <button class="preset-btn" data-cmd="whoami">whoami</button>
                         <button class="preset-btn" data-cmd="skills">skills</button>
-                        <button class="preset-btn" data-cmd="hardware">hardware</button>
+                        <button class="preset-btn" data-cmd="engagement">engagement</button>
                         <button class="preset-btn" data-cmd="erfahrung">erfahrung</button>
                         <button class="preset-btn" data-cmd="kontakt">kontakt</button>
                     </div>
@@ -380,22 +473,22 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section" id="contact">
+        <section class="section" id="contact" aria-labelledby="contact-title">
             <div class="container">
                 <div class="glass-card contact-card">
                     <div class="contact-header">
-                        <h2 class="contact-title" data-de="Kontakt aufnehmen" data-en="Get in touch">Kontakt aufnehmen</h2>
+                        <h2 class="contact-title" id="contact-title" data-de="Kontakt aufnehmen" data-en="Get in touch">Kontakt aufnehmen</h2>
                         <p class="contact-sub" data-de="Du möchtest dich vernetzen oder über Projekte sprechen? Schreib mir eine Nachricht!" data-en="Would you like to connect or discuss projects? Send me a message!">
                             Du möchtest dich vernetzen oder über Projekte sprechen? Schreib mir eine Nachricht!
                         </p>
                     </div>
 
                     <div class="contact-actions">
-                        <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" class="btn btn-primary">
-                            <i data-lucide="linkedin"></i> <span data-de="Auf LinkedIn vernetzen" data-en="Connect on LinkedIn">Auf LinkedIn vernetzen</span>
+                        <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i data-lucide="linkedin" aria-hidden="true"></i> <span data-de="Auf LinkedIn vernetzen" data-en="Connect on LinkedIn">Auf LinkedIn vernetzen</span>
                         </a>
-                        <button id="copy-email-btn" class="btn btn-secondary">
-                            <i data-lucide="copy"></i> <span data-de="E-Mail kopieren" data-en="Copy E-Mail">E-Mail kopieren</span>
+                        <button id="copy-email-btn" class="btn btn-secondary" aria-label="E-Mail-Adresse in Zwischenablage kopieren">
+                            <i data-lucide="copy" aria-hidden="true"></i> <span data-de="E-Mail kopieren" data-en="Copy E-Mail">E-Mail kopieren</span>
                         </button>
                     </div>
                 </div>
@@ -403,12 +496,12 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container footer-content">
             <p>&copy; 2026 Emin Girimhanov | Magdeburg</p>
             <div class="footer-links">
-                <a href="https://github.com/egirimhanov" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/egirimhanov" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/emin-girimhanov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="#hero" data-de="Nach oben" data-en="Back to top">Nach oben</a>
             </div>
         </div>

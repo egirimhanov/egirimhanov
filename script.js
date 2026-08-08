@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
     const commandsDE = {
-        whoami: "Emin Girimhanov. Wirtschaftsinformatik-Student an der OVGU Magdeburg und Softwareentwickler bei der Falcos GmbH.",
+        whoami: "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH.",
         skills: "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).",
-        hardware: "Hardware & 3D-Druck: \n 1. Autonomer Mähroboter (Raspberry Pi, Python, 3D-Druck) \n 2. CJD Schulcampus Droyßig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab",
-        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. Autonomer Mähroboter & Schulcampus CAD 3D-Druck \n 3. Tutor an der FIN OVGU (Algorithmen, Datenstrukturen & Mathe) \n 4. Stellvertreter Fachschaftsrat FIN (IT-Systeme & O-Woche) \n 5. Projekt OSCAR (Semesterplanungs-Bot)",
+        engagement: "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gewählter Klassensprecher CJD Droyßig",
+        erfahrung: "Erfahrungen: \n 1. Falcos GmbH (Softwareentwicklung Public Sector, XÖV, LLM) \n 2. SIDUM e.V. (Unternehmensberatung Finanzen & Recht) \n 3. Autonomer Mähroboter & Schulcampus CAD 3D-Druck (Digitalisierungpreis) \n 4. Tutor an der FIN OVGU (Algorithmen & Mathe) \n 5. Fachschaftsrat FIN (Stellvertreter & IT-Admin)",
         kontakt: "Kontakt: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
-        help: "Optionen: whoami, skills, hardware, erfahrung, kontakt, clear"
+        help: "Optionen: whoami, skills, engagement, erfahrung, kontakt, clear"
     };
 
     const commandsEN = {
-        whoami: "Emin Girimhanov. Business Informatics student at OVGU Magdeburg and Software Developer at Falcos GmbH.",
+        whoami: "Emin Girimhanov. Business Informatics student @OVGU (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH.",
         skills: "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).",
-        hardware: "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python, FDM 3D printing) \n 2. CJD Droyßig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab",
-        erfahrung: "Experience: \n 1. Falcos GmbH (Public Sector Software Dev, XÖV, LLMs) \n 2. Autonomous Lawn Mower & Campus CAD 3D Printing \n 3. Teaching Assistant at FIN OVGU (Algorithms, Data Structures & Math) \n 4. Student Council Representative (IT Admin & Orientation Weeks) \n 5. OSCAR Project (Semester Planner Bot)",
+        engagement: "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droyßig",
+        erfahrung: "Experience: \n 1. Falcos GmbH (Public Sector Software Dev, XÖV, LLMs) \n 2. SIDUM e.V. (Student Management Consulting Finance & Legal) \n 3. Autonomous Lawn Mower & Campus CAD 3D Printing (Digitalization Award) \n 4. Teaching Assistant FIN OVGU (Algorithms & Math) \n 5. Student Council Representative & IT Admin",
         kontakt: "Contact: \n • E-Mail: emin.girimhanov@posteo.de \n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n • GitHub: https://github.com/egirimhanov",
-        help: "Options: whoami, skills, hardware, erfahrung, kontakt, clear"
+        help: "Options: whoami, skills, engagement, erfahrung, kontakt, clear"
     };
 
     function applyLanguage(lang) {

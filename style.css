@@ -1,19 +1,19 @@
-/* CSS Design System for Emin Girimhanov Startseite */
+/* CSS Design System for Emin Girimhanov Startseite (SEO, GEO & WCAG 2.1 AA Accessibility Optimized) */
 :root {
     --bg-dark: #0a0d14;
-    --bg-card: rgba(18, 24, 38, 0.65);
-    --bg-card-hover: rgba(28, 36, 56, 0.85);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-highlight: rgba(139, 92, 246, 0.4);
+    --bg-card: rgba(18, 24, 38, 0.75);
+    --bg-card-hover: rgba(28, 36, 56, 0.90);
+    --border-color: rgba(255, 255, 255, 0.12);
+    --border-highlight: rgba(139, 92, 246, 0.5);
     
-    --primary: #8b5cf6;
+    --primary: #a78bfa;
     --primary-glow: rgba(139, 92, 246, 0.35);
-    --cyan: #06b6d4;
-    --cyan-glow: rgba(6, 182, 212, 0.35);
+    --cyan: #38bdf8;
+    --cyan-glow: rgba(56, 189, 248, 0.35);
     
-    --text-main: #f3f4f6;
-    --text-muted: #9ca3af;
-    --text-sub: #6b7280;
+    --text-main: #f9fafb;
+    --text-muted: #d1d5db;
+    --text-sub: #9ca3af;
 
     --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-code: 'Fira Code', monospace;
@@ -44,6 +44,32 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
+}
+
+/* Accessibility: Focus Indicators (WCAG 2.1 AA) */
+:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Accessibility: Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    background: #8b5cf6;
+    color: #ffffff;
+    padding: 12px 20px;
+    z-index: 9999;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 16px;
 }
 
 /* Ambient Background Blobs */
@@ -91,7 +117,7 @@ body {
 
 /* Typography Helpers & Text Clipping Fix */
 .gradient-text {
-    background: linear-gradient(135deg, #a78bfa 0%, #38bdf8 100%);
+    background: linear-gradient(135deg, #c4b5fd 0%, #38bdf8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -131,7 +157,7 @@ body {
     width: 100%;
     z-index: 100;
     padding: 16px 0;
-    background: rgba(10, 13, 20, 0.85);
+    background: rgba(10, 13, 20, 0.88);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -171,7 +197,7 @@ body {
     transition: var(--transition);
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
     color: var(--text-main);
 }
 
@@ -207,7 +233,7 @@ body {
 
 .btn-primary {
     background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-    color: white;
+    color: #ffffff;
     box-shadow: 0 4px 20px var(--primary-glow);
 }
 
@@ -217,13 +243,13 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1);
     color: var(--text-main);
     border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.18);
     transform: translateY(-2px);
 }
 
@@ -256,8 +282,8 @@ body {
     align-items: center;
     gap: 10px;
     padding: 6px 16px;
-    background: rgba(6, 182, 212, 0.1);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.4);
     border-radius: var(--radius-full);
     font-size: 0.85rem;
     color: var(--cyan);
@@ -274,9 +300,9 @@ body {
 }
 
 @keyframes pulse {
-    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7); }
-    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(6, 182, 212, 0); }
-    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(56, 189, 248, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
 }
 
 .hero-title {
@@ -389,7 +415,7 @@ body {
     align-items: center;
     gap: 6px;
     padding: 6px 12px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: var(--radius-full);
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -405,7 +431,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border: 1px solid var(--border-color);
     color: var(--text-main);
     display: flex;
@@ -417,7 +443,7 @@ body {
 
 .social-icon:hover {
     background: var(--primary);
-    color: white;
+    color: #ffffff;
     border-color: var(--primary);
     transform: translateY(-3px);
 }
@@ -461,7 +487,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: var(--radius-sm);
-    background: rgba(139, 92, 246, 0.15);
+    background: rgba(139, 92, 246, 0.18);
     color: var(--primary);
     display: flex;
     align-items: center;
@@ -481,7 +507,7 @@ body {
 
 /* Skills Wrapper */
 .skills-wrapper {
-    display: grid;
+    display grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
@@ -510,7 +536,7 @@ body {
     align-items: center;
     gap: 8px;
     padding: 8px 14px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-sm);
     font-size: 0.88rem;
@@ -519,7 +545,7 @@ body {
 }
 
 .skill-pill:hover {
-    background: rgba(139, 92, 246, 0.15);
+    background: rgba(139, 92, 246, 0.2);
     border-color: var(--primary);
     transform: translateY(-2px);
 }
@@ -536,7 +562,7 @@ body {
 .filter-btn {
     padding: 8px 20px;
     border-radius: var(--radius-full);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border: 1px solid var(--border-color);
     color: var(--text-muted);
     font-size: 0.9rem;
@@ -546,7 +572,7 @@ body {
 
 .filter-btn.active, .filter-btn:hover {
     background: var(--primary);
-    color: white;
+    color: #ffffff;
     border-color: var(--primary);
 }
 
@@ -607,7 +633,7 @@ body {
 
 .project-tags span {
     padding: 4px 10px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 4px;
     font-size: 0.75rem;
     color: var(--text-muted);
@@ -705,7 +731,7 @@ body {
 
 .preset-btn {
     padding: 4px 10px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid var(--border-color);
     border-radius: 4px;
     color: var(--cyan);
@@ -724,7 +750,7 @@ body {
 .contact-card {
     padding: 48px;
     text-align: center;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(56, 189, 248, 0.06) 100%);
 }
 
 .contact-title {
