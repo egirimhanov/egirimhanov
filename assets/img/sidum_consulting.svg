@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <rect width="1200" height="675" fill="#0d1527"/>
+  <rect width="1200" height="42" fill="#060a14"/>
+  <circle cx="20" cy="21" r="6" fill="#ff5f56"/><circle cx="40" cy="21" r="6" fill="#ffbd2e"/><circle cx="60" cy="21" r="6" fill="#27c93f"/>
+  <text x="600" y="25" fill="#9ca3af" font-family="monospace" font-size="12" text-anchor="middle">SIDUM e.V. Finanzen &amp; Recht Case Study</text>
+  <text x="60" y="160" fill="#34d399" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">SIDUM E.V. MANAGEMENT CONSULTING</text>
+  <text x="60" y="210" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36">Kreditentscheidungs-Modelle (d-fine) &amp; PwC GenAI</text>
+  <rect x="60" y="260" width="520" height="360" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(52,211,153,0.3)"/>
+  <text x="90" y="310" fill="#34d399" font-family="sans-serif" font-size="18" font-weight="700">Financial Risk Analytics</text>
+  <path d="M100 550 L180 480 L260 510 L340 420 L420 380 L500 440" fill="none" stroke="#38bdf8" stroke-width="4"/>
+  <path d="M100 550 L180 500 L260 450 L340 390 L420 340 L500 310" fill="none" stroke="#a78bfa" stroke-width="4"/>
+  <rect x="620" y="260" width="520" height="360" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(167,139,250,0.3)"/>
+  <text x="650" y="310" fill="#a78bfa" font-family="sans-serif" font-size="18" font-weight="700">PwC GenAI Masterclass</text>
+  <text x="650" y="380" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="800">d-fine Workshop &amp; Credit Risk</text>
+</svg>

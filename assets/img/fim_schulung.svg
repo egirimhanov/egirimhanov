@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#31104b"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#bgFim)"/>
+  
+  <!-- Browser Header -->
+  <rect width="1200" height="42" fill="#090d16"/>
+  <circle cx="20" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="21" r="6" fill="#27c93f"/>
+  <rect x="180" y="8" width="840" height="26" rx="13" fill="rgba(255,255,255,0.07)"/>
+  <text x="600" y="25" fill="#9ca3af" font-family="monospace" font-size="12" text-anchor="middle">https://fim-schulung.de/</text>
+
+  <!-- Navbar -->
+  <rect y="42" width="1200" height="60" fill="rgba(15,23,42,0.9)"/>
+  <text x="50" y="78" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="20">FIM <tspan fill="#a78bfa">SCHULUNG</tspan></text>
+  <text x="800" y="77" fill="#d1d5db" font-family="sans-serif" font-size="14">Kurse &amp; Module</text>
+  <text x="930" y="77" fill="#d1d5db" font-family="sans-serif" font-size="14">Zertifikate</text>
+  <rect x="1040" y="58" width="110" height="30" rx="8" fill="url(#purpleGrad)"/>
+  <text x="1095" y="78" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Anmelden</text>
+
+  <!-- Hero Content -->
+  <text x="60" y="160" fill="#a78bfa" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">PUBLIC SECTOR E-LEARNING PORTAL</text>
+  <text x="60" y="210" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36">Föderales Informationsmanagement Portal</text>
+  <text x="60" y="245" fill="#9ca3af" font-family="sans-serif" font-size="16">Schulungs- und Qualifizierungsplattform im Öffentlichen Sektor – Gemeinsam mit Kollegin überarbeitet &amp; optimiert.</text>
+
+  <!-- Course Cards -->
+  <rect x="60" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
+  <rect x="80" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
+  <text x="230" y="380" fill="#a78bfa" font-family="sans-serif" font-size="40" text-anchor="middle">🎓</text>
+  <text x="80" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">FIM Stammdaten Basis</text>
+  <text x="80" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 1: Grundlagen &amp; Standards</text>
+  <rect x="80" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="80" y="530" width="160" height="10" rx="5" fill="#a78bfa"/>
+  <text x="310" y="540" fill="#a78bfa" font-family="sans-serif" font-size="12" font-weight="700">75%</text>
+
+  <rect x="430" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
+  <rect x="450" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
+  <text x="600" y="380" fill="#38bdf8" font-family="sans-serif" font-size="40" text-anchor="middle">🛡️</text>
+  <text x="450" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">IT-Sicherheit &amp; DSGVO</text>
+  <text x="450" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 2: Rechtskonforme Prozesse</text>
+  <rect x="450" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="450" y="530" width="220" height="10" rx="5" fill="#34d399"/>
+  <text x="680" y="540" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="700">100%</text>
+
+  <rect x="800" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
+  <rect x="820" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
+  <text x="970" y="380" fill="#f43f5e" font-family="sans-serif" font-size="40" text-anchor="middle">⚡</text>
+  <text x="820" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">Prozessmodellierung FIM</text>
+  <text x="820" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 3: Methodenexperte</text>
+  <rect x="820" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="820" y="530" width="90" height="10" rx="5" fill="#f43f5e"/>
+  <text x="1050" y="540" fill="#f43f5e" font-family="sans-serif" font-size="12" font-weight="700">40%</text>
+</svg>
