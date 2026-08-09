@@ -1,59 +1,94 @@
-// JavaScript Logik für die Startseite & Konsolenbefehle (Nutzername: emin-girimhanov)
+// JavaScript Logik für Emin Girimhanov Startseite (SEO, GEO & WCAG 2.1 AA Accessibility)
+
+window.openLightbox = function(src, caption) {
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    if (lightboxModal && lightboxImg && lightboxCaption) {
+        lightboxImg.src = src;
+        lightboxImg.alt = caption || 'Projekt Vorschau';
+        lightboxCaption.innerText = caption || '';
+        lightboxModal.classList.add('active');
+        lightboxModal.setAttribute('aria-hidden', 'false');
+    }
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle-btn');
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
-    const textExperienceDE = "Erfahrungen & Projekte: \n 1. Falcos GmbH (Entwicklung automatisierter X\u00f6V-ZUGFeRD Parser zur Reduzierung manueller Erfassungszeiten in Beh\u00f6rden, Full-Stack & LLM) \n 2. SIDUM e.V. (Mitarbeit an Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass) \n 3. Fachschaftsrat FIN OVGU (Event-Leitung f\u00fcr 150+ Erstsemester, Knowledge-Scaling via Wiki) \n 4. Autonomer M\u00e4hroboter (Raspberry Pi & Python-Sensorik) & Campus CAD 3D-Druck (Digitalisierungpreis)";
-    const textExperienceEN = "Experience & Projects: \n 1. Falcos GmbH (Developing automated X\u00d6V-ZUGFeRD parsers to eliminate manual data entry time in public sector, Full-Stack & LLM) \n 2. SIDUM e.V. (Consulting on credit decision use cases with d-fine & PwC GenAI Masterclass) \n 3. Student Council FIN OVGU (Event management for 150+ students, scaling wiki knowledge) \n 4. Autonomous Mower (Raspberry Pi & Python) & Campus CAD 3D Printing (Digitalization Award)";
+    const textExperienceDE = "Erfahrungen & Produkte:\n 1. Autohaus Kleinjena (Vollständiges Web-Portal & Fahrzeug-Schaufenster, Netlify: https://autohaus-kleinjena.netlify.app/)\n 2. FIM Schulung (Gemeinsam mit Kollegin überarbeitete E-Learning-Plattform im Öffentlichen Sektor: https://fim-schulung.de/)\n 3. Falcos GmbH (Entwicklung automatisierter XÖV-ZUGFeRD Parser & LLM-Automatisierung)\n 4. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 5. Autonomer Mähroboter (Raspberry Pi & Python) & CJD Schulcampus 3D-Modell (Digitalisierungspreis)";
+    const textExperienceEN = "Experience & Products:\n 1. Autohaus Kleinjena (Full Web Portal & Car Showroom, Netlify: https://autohaus-kleinjena.netlify.app/)\n 2. FIM Schulung (E-Learning platform for public sector, improved with colleague: https://fim-schulung.de/)\n 3. Falcos GmbH (Automated XÖV-ZUGFeRD parsers & LLM process automation)\n 4. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 5. Autonomous Mower (Raspberry Pi & Python) & School Campus 3D Model (Digitalization Award)";
 
-    const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH.";
-    const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH.";
+    const textWebsitesDE = "Highlights Web-Anwendungen:\n • Autohaus Kleinjena (Erstellt von Emin): https://autohaus-kleinjena.netlify.app/\n • FIM Schulung (Mit Kollegin verbessert): https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
+    const textWebsitesEN = "Featured Web Applications:\n • Autohaus Kleinjena (Created by Emin): https://autohaus-kleinjena.netlify.app/\n • FIM Schulung (Co-developed with colleague): https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
 
-    const textSkillsDE = "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D-Druck, Certified ScrumMaster (CSM).";
-    const textSkillsEN = "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox, n8n, 3D Printing, Certified ScrumMaster (CSM).";
+    const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU Magdeburg (Note 1,6), e-fellows.net Stipendiat und Softwareentwickler @Falcos GmbH. Entwickler von autohaus-kleinjena.netlify.app.";
+    const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU Magdeburg (1.6 GPA), e-fellows.net scholar, and Software Developer @Falcos GmbH. Developer of autohaus-kleinjena.netlify.app.";
 
-    const textEngagementDE = "Fachliches & Gesellschaftliches Engagement: \n 1. SIDUM e.V. (Ressort Finanzen & Recht, GenAI Masterclass PwC, Expected-Goals Kreditmodelle d-fine) \n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemesterwochen, IT-Ref & Wiki) \n 3. Gew\u00e4hlter Klassensprecher CJD Droy\u00dfig";
-    const textEngagementEN = "Consulting & Community Engagement: \n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine Expected Goals credit models) \n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki) \n 3. Elected Class Representative CJD Droy\u00dfig";
+    const textSkillsDE = "Technologien: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE, n8n, 3D-Druck (FDM), Certified ScrumMaster (CSM).";
+    const textSkillsEN = "Technologies: Python, Java, JavaScript, TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE, n8n, 3D Printing (FDM), Certified ScrumMaster (CSM).";
 
-    const textHardwareDE = "Hardware & 3D-Druck: \n 1. Autonomer M\u00e4hroboter (Raspberry Pi, Python-Sensorik, 3D-Druck) \n 2. CJD Schulcampus Droy\u00dfig 3D-Modell (CAD 1:150, Digitalisierungpreis) \n 3. Proxmox Self-Hosting Server Lab";
-    const textHardwareEN = "Hardware & 3D Printing: \n 1. Autonomous Lawn Mower (Raspberry Pi, Python sensor control, FDM 3D printing) \n 2. CJD Droy\u00dfig School Campus 3D Model (1:150 CAD, Digitalization Award) \n 3. Proxmox Self-Hosting Server Lab";
+    const textEngagementDE = "Engagement & Consulting:\n 1. SIDUM e.V. (Finanzen & Recht, PwC GenAI Masterclass, d-fine Expected-Goals Kreditmodelle)\n 2. Fachschaftsrat FIN OVGU (Stellvertreter, Erstsemester-Logistik, IT & Wiki)\n 3. Gewählter Klassensprecher CJD Droyßig";
+    const textEngagementEN = "Engagement & Consulting:\n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine credit models)\n 2. Student Council Representative FIN OVGU (Orientation Weeks, IT & Wiki)\n 3. Elected Class Representative CJD Droyßig";
 
-    const textKontaktDE = "Kontakt: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/emin-girimhanov";
-    const textKontaktEN = "Contact: \n \u2022 E-Mail: emin.girimhanov@posteo.de \n \u2022 LinkedIn: https://www.linkedin.com/in/emin-girimhanov/ \n \u2022 GitHub: https://github.com/emin-girimhanov";
+    const textKontaktDE = "Kontakt:\n • E-Mail: emin.girimhanov@posteo.de\n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/\n • GitHub: https://github.com/emin-girimhanov";
+    const textKontaktEN = "Contact:\n • E-Mail: emin.girimhanov@posteo.de\n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/\n • GitHub: https://github.com/emin-girimhanov";
 
-    // Synonym Map to resolve aliases to primary commands
+    // Command Aliases Map
     const aliasMap = {
         whoami: 'whoami', about: 'whoami', profil: 'whoami', profile: 'whoami',
+        webseiten: 'webseiten', produkte: 'webseiten', autohaus: 'webseiten', fim: 'webseiten', websites: 'webseiten',
         skills: 'skills', kenntnisse: 'skills', tech: 'skills', stack: 'skills',
         erfahrung: 'erfahrung', erfahrungen: 'erfahrung', projekte: 'erfahrung', projects: 'erfahrung', experience: 'erfahrung',
         engagement: 'engagement', consulting: 'engagement', sidum: 'engagement', farafin: 'engagement',
-        hardware: 'hardware', '3d': 'hardware', maker: 'hardware',
+        impressum: 'impressum', legal: 'impressum', imprint: 'impressum',
         kontakt: 'kontakt', contact: 'kontakt', email: 'kontakt', mail: 'kontakt', linkedin: 'kontakt'
     };
 
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+        }
+    }
+
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+    }
+
     function getCommandText(primaryCmd, lang) {
+        if (primaryCmd === 'impressum') {
+            openModal('impressum-modal');
+            return lang === 'de' ? "Öffne Impressum Modal..." : "Opening Imprint Modal...";
+        }
+
         if (lang === 'de') {
             switch (primaryCmd) {
                 case 'whoami': return textWhoamiDE;
+                case 'webseiten': return textWebsitesDE;
                 case 'skills': return textSkillsDE;
                 case 'erfahrung': return textExperienceDE;
                 case 'engagement': return textEngagementDE;
-                case 'hardware': return textHardwareDE;
                 case 'kontakt': return textKontaktDE;
-                case 'help': return "Optionen: whoami, skills, erfahrung, engagement, hardware, kontakt, clear";
+                case 'help': return "Optionen: whoami, webseiten, skills, erfahrung, engagement, impressum, kontakt, clear";
                 default: return null;
             }
         } else {
             switch (primaryCmd) {
                 case 'whoami': return textWhoamiEN;
+                case 'webseiten': return textWebsitesEN;
                 case 'skills': return textSkillsEN;
                 case 'erfahrung': return textExperienceEN;
                 case 'engagement': return textEngagementEN;
-                case 'hardware': return textHardwareEN;
                 case 'kontakt': return textKontaktEN;
-                case 'help': return "Options: whoami, skills, experience, engagement, hardware, contact, clear";
+                case 'help': return "Options: whoami, webseiten, skills, experience, engagement, impressum, contact, clear";
                 default: return null;
             }
         }
@@ -96,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyLanguage(currentLang);
 
+    // Terminal Command Execution
     const terminalInput = document.getElementById('terminal-input');
     const terminalOutput = document.getElementById('terminal-output');
     const presetBtns = document.querySelectorAll('.preset-btn');
@@ -126,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultLine.innerText = responseText;
         } else {
             resultLine.innerText = currentLang === 'de' 
-                ? `Befehl '${rawCmd}' unbekannt. Tippe 'help' f\u00fcr Hilfe.`
+                ? `Befehl '${rawCmd}' unbekannt. Tippe 'help' für Hilfe.`
                 : `Command '${rawCmd}' not found. Type 'help' for options.`;
         }
 
@@ -150,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Portfolio Category Filtering (Supports Multiple Categories)
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -161,8 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const filter = btn.getAttribute('data-filter');
 
             projectCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
+                const categories = (card.getAttribute('data-category') || '').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
                     card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
@@ -171,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Copy Email to Clipboard
     const copyEmailBtn = document.getElementById('copy-email-btn');
     if (copyEmailBtn) {
         copyEmailBtn.addEventListener('click', () => {
@@ -185,4 +223,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Modal Trigger Listeners
+    const openImpressumBtn = document.getElementById('open-impressum-btn');
+    const openImpressumNavBtn = document.getElementById('open-impressum-nav-btn');
+    const closeImpressumBtn = document.getElementById('close-impressum-btn');
+    
+    const openPrivacyBtn = document.getElementById('open-privacy-btn');
+    const closePrivacyBtn = document.getElementById('close-privacy-btn');
+    
+    const closeLightboxBtn = document.getElementById('close-lightbox-btn');
+
+    if (openImpressumBtn) openImpressumBtn.addEventListener('click', () => openModal('impressum-modal'));
+    if (openImpressumNavBtn) openImpressumNavBtn.addEventListener('click', () => openModal('impressum-modal'));
+    if (closeImpressumBtn) closeImpressumBtn.addEventListener('click', () => closeModal('impressum-modal'));
+
+    if (openPrivacyBtn) openPrivacyBtn.addEventListener('click', () => openModal('privacy-modal'));
+    if (closePrivacyBtn) closePrivacyBtn.addEventListener('click', () => closeModal('privacy-modal'));
+
+    if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', () => closeModal('lightbox-modal'));
+
+    // Close Modals on Overlay Click
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closeModal(overlay.id);
+            }
+        });
+    });
+
+    // Close Modals on ESC Key Press (A11Y)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal('impressum-modal');
+            closeModal('privacy-modal');
+            closeModal('lightbox-modal');
+        }
+    });
 });
