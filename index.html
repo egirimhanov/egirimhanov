@@ -104,6 +104,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Vercel Speed Insights Integration -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -111,6 +113,7 @@
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
 
     <div class="ambient-light" aria-hidden="true">
+        <canvas id="canvas-ui-bg"></canvas>
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
     </div>
@@ -150,7 +153,11 @@
             <div class="container hero-grid">
                 <div class="hero-content">
                     <div class="status-badge" role="status">
-                        <span class="pulse-dot" aria-hidden="true"></span>
+                        <div class="thinking-orb" aria-hidden="true">
+                            <span class="orb-ring ring-1"></span>
+                            <span class="orb-ring ring-2"></span>
+                            <span class="orb-core"></span>
+                        </div>
                         <span data-de="Softwareentwickler &amp; Wirtschaftsinformatiker" data-en="Software Developer &amp; Business Informatics Student">Softwareentwickler &amp; Wirtschaftsinformatiker</span>
                     </div>
 
