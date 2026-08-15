@@ -1,64 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
-    <linearGradient id="bgFim" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="50%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#31104b"/>
+    <linearGradient id="fimBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#111c3a"/>
+      <stop offset="100%" stop-color="#0b1329"/>
     </linearGradient>
     <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowFim" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
   </defs>
+
+  <!-- Browser Window Background -->
+  <rect width="1200" height="675" fill="url(#fimBg)"/>
   
-  <rect width="1200" height="675" fill="url(#bgFim)"/>
+  <!-- Browser Header Bar -->
+  <path d="M 0 0 L 1200 0 L 1200 48 L 0 48 Z" fill="#060913"/>
+  <!-- Window Control Buttons -->
+  <circle cx="24" cy="24" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="24" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="24" r="6" fill="#10b981"/>
   
-  <!-- Browser Header -->
-  <rect width="1200" height="42" fill="#090d16"/>
-  <circle cx="20" cy="21" r="6" fill="#ff5f56"/>
-  <circle cx="40" cy="21" r="6" fill="#ffbd2e"/>
-  <circle cx="60" cy="21" r="6" fill="#27c93f"/>
-  <rect x="180" y="8" width="840" height="26" rx="13" fill="rgba(255,255,255,0.07)"/>
-  <text x="600" y="25" fill="#9ca3af" font-family="monospace" font-size="12" text-anchor="middle">https://fim-schulung.de/</text>
+  <!-- URL Address Bar -->
+  <rect x="180" y="10" width="840" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <!-- Lock Icon -->
+  <path d="M 198 21 L 198 18 A 3 3 0 0 1 204 18 L 204 21 M 196 21 L 206 21 L 206 27 L 196 27 Z" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="216" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1" font-weight="500">https://fim-schulung.de/</text>
 
-  <!-- Navbar -->
-  <rect y="42" width="1200" height="60" fill="rgba(15,23,42,0.9)"/>
-  <text x="50" y="78" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="20">FIM <tspan fill="#a78bfa">SCHULUNG</tspan></text>
-  <text x="800" y="77" fill="#d1d5db" font-family="sans-serif" font-size="14">Kurse &amp; Module</text>
-  <text x="930" y="77" fill="#d1d5db" font-family="sans-serif" font-size="14">Zertifikate</text>
-  <rect x="1040" y="58" width="110" height="30" rx="8" fill="url(#purpleGrad)"/>
-  <text x="1095" y="78" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Anmelden</text>
+  <!-- Website Header Navbar -->
+  <rect x="0" y="48" width="1200" height="64" fill="#0f172a"/>
+  <line x1="0" y1="112" x2="1200" y2="112" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Logo -->
+  <rect x="40" y="64" width="36" height="32" rx="6" fill="url(#tealGrad)"/>
+  <text x="48" y="86" font-family="sans-serif" font-weight="900" font-size="16" fill="#ffffff">FIM</text>
+  <text x="88" y="86" font-family="sans-serif" font-weight="800" font-size="18" fill="#ffffff">FIM-Schulung <tspan font-size="12" fill="#94a3b8" font-weight="400">| Falcos GmbH</tspan></text>
+  
+  <!-- Nav Links -->
+  <text x="680" y="86" font-family="sans-serif" font-size="14" fill="#94a3b8" font-weight="500">Dozenten</text>
+  <text x="780" y="86" font-family="sans-serif" font-size="14" fill="#94a3b8" font-weight="500">Angebote</text>
+  <text x="880" y="86" font-family="sans-serif" font-size="14" fill="#94a3b8" font-weight="500">Was ist FIM?</text>
+  <rect x="1000" y="64" width="160" height="34" rx="6" fill="url(#purpleGrad)"/>
+  <text x="1022" y="86" font-family="sans-serif" font-size="13" fill="#ffffff" font-weight="700">Kurskalender 2026 ↗</text>
 
-  <!-- Hero Content -->
-  <text x="60" y="160" fill="#a78bfa" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">PUBLIC SECTOR E-LEARNING PORTAL</text>
-  <text x="60" y="210" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36">Föderales Informationsmanagement Portal</text>
-  <text x="60" y="245" fill="#9ca3af" font-family="sans-serif" font-size="16">Schulungs- und Qualifizierungsplattform im Öffentlichen Sektor – Gemeinsam mit Kollegin überarbeitet &amp; optimiert.</text>
+  <!-- Hero Section Content -->
+  <!-- FITKO Seal Badge -->
+  <rect x="40" y="140" width="290" height="28" rx="14" fill="rgba(6, 182, 212, 0.15)" stroke="rgba(6, 182, 212, 0.4)" stroke-width="1"/>
+  <text x="56" y="159" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="600">🏛️ FITKO-zertifizierte FIM Schulungen</text>
 
-  <!-- Course Cards -->
-  <rect x="60" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
-  <rect x="80" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
-  <text x="230" y="380" fill="#a78bfa" font-family="sans-serif" font-size="40" text-anchor="middle">🎓</text>
-  <text x="80" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">FIM Stammdaten Basis</text>
-  <text x="80" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 1: Grundlagen &amp; Standards</text>
-  <rect x="80" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-  <rect x="80" y="530" width="160" height="10" rx="5" fill="#a78bfa"/>
-  <text x="310" y="540" fill="#a78bfa" font-family="sans-serif" font-size="12" font-weight="700">75%</text>
+  <!-- Headline -->
+  <text x="40" y="210" font-family="sans-serif" font-size="34" fill="#ffffff" font-weight="800">Schluss mit Behörden-Pingpong,</text>
+  <text x="40" y="250" font-family="sans-serif" font-size="34" fill="#38bdf8" font-weight="800">her mit der digitalen Zukunft!</text>
 
-  <rect x="430" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
-  <rect x="450" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
-  <text x="600" y="380" fill="#38bdf8" font-family="sans-serif" font-size="40" text-anchor="middle">🛡️</text>
-  <text x="450" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">IT-Sicherheit &amp; DSGVO</text>
-  <text x="450" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 2: Rechtskonforme Prozesse</text>
-  <rect x="450" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-  <rect x="450" y="530" width="220" height="10" rx="5" fill="#34d399"/>
-  <text x="680" y="540" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="700">100%</text>
+  <!-- Subheadline -->
+  <text x="40" y="290" font-family="sans-serif" font-size="16" fill="#cbd5e1">Föderales Informationsmanagement (FIM) – Praxisnahe E-Learning Schulungen für den Öffentlichen Sektor.</text>
 
-  <rect x="800" y="280" width="340" height="340" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.2)"/>
-  <rect x="820" y="300" width="300" height="150" rx="10" fill="#1e1b4b"/>
-  <text x="970" y="380" fill="#f43f5e" font-family="sans-serif" font-size="40" text-anchor="middle">⚡</text>
-  <text x="820" y="480" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">Prozessmodellierung FIM</text>
-  <text x="820" y="505" fill="#9ca3af" font-family="sans-serif" font-size="14">Modul 3: Methodenexperte</text>
-  <rect x="820" y="530" width="220" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-  <rect x="820" y="530" width="90" height="10" rx="5" fill="#f43f5e"/>
-  <text x="1050" y="540" fill="#f43f5e" font-family="sans-serif" font-size="12" font-weight="700">40%</text>
+  <!-- CTA Buttons -->
+  <rect x="40" y="320" width="210" height="44" rx="8" fill="url(#tealGrad)"/>
+  <text x="64" y="347" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="700">Zum Basisseminar</text>
+
+  <rect x="265" y="320" width="190" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="292" y="347" font-family="sans-serif" font-size="14" fill="#cbd5e1" font-weight="600">Methodenexperte</text>
+
+  <!-- Courses Grid Header -->
+  <text x="40" y="415" font-family="sans-serif" font-size="18" fill="#ffffff" font-weight="700">Unsere Schulungsprogramme</text>
+
+  <!-- Course Card 1 -->
+  <g filter="url(#shadowFim)">
+    <rect x="40" y="435" width="355" height="205" rx="10" fill="url(#cardBg)" stroke="#1e3a8a" stroke-width="1"/>
+    <rect x="55" y="455" width="140" height="24" rx="12" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="67" y="471" font-family="sans-serif" font-size="11" fill="#c084fc" font-weight="700">EINSEIGER-KURS</text>
+    <text x="55" y="515" font-family="sans-serif" font-size="18" fill="#ffffff" font-weight="700">FIM-Basisseminar</text>
+    <text x="55" y="540" font-family="sans-serif" font-size="13" fill="#94a3b8">Das ABC des Föderalen Informations-managements. Grundlagen OZG 2.0 &amp; Datenfelder.</text>
+    <rect x="55" y="580" width="160" height="34" rx="6" fill="#2563eb"/>
+    <text x="80" y="602" font-family="sans-serif" font-size="12" fill="#ffffff" font-weight="700">Termine wählen</text>
+  </g>
+
+  <!-- Course Card 2 -->
+  <g filter="url(#shadowFim)">
+    <rect x="422" y="435" width="355" height="205" rx="10" fill="url(#cardBg)" stroke="#1e3a8a" stroke-width="1"/>
+    <rect x="437" y="455" width="160" height="24" rx="12" fill="rgba(6, 182, 212, 0.2)" stroke="#06b6d4" stroke-width="1"/>
+    <text x="449" y="471" font-family="sans-serif" font-size="11" fill="#38bdf8" font-weight="700">ADVANCED EXPERT</text>
+    <text x="437" y="515" font-family="sans-serif" font-size="18" fill="#ffffff" font-weight="700">FIM-Methodenexperte</text>
+    <text x="437" y="540" font-family="sans-serif" font-size="13" fill="#94a3b8">Vertiefung der FIM-Methodik für Prozesse &amp; Datenfelder. Souveräne Anwendung in Behörden.</text>
+    <rect x="437" y="580" width="160" height="34" rx="6" fill="#0284c7"/>
+    <text x="462" y="602" font-family="sans-serif" font-size="12" fill="#ffffff" font-weight="700">Termine wählen</text>
+  </g>
+
+  <!-- Course Card 3 -->
+  <g filter="url(#shadowFim)">
+    <rect x="804" y="435" width="355" height="205" rx="10" fill="url(#cardBg)" stroke="#1e3a8a" stroke-width="1"/>
+    <rect x="819" y="455" width="150" height="24" rx="12" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1"/>
+    <text x="831" y="471" font-family="sans-serif" font-size="11" fill="#34d399" font-weight="700">MEISTERKLASSE</text>
+    <text x="819" y="515" font-family="sans-serif" font-size="18" fill="#ffffff" font-weight="700">FIM-Coach Ausbildung</text>
+    <text x="819" y="540" font-family="sans-serif" font-size="13" fill="#94a3b8">Ausbildung zum zertifizierten FIM-Coach. Befähigung zur Schulung eigener Teams.</text>
+    <rect x="819" y="580" width="160" height="34" rx="6" fill="#059669"/>
+    <text x="844" y="602" font-family="sans-serif" font-size="12" fill="#ffffff" font-weight="700">Termine wählen</text>
+  </g>
 </svg>
