@@ -6,3 +6,6 @@ node_modules/
 
 # Original-Scans und unkomprimierte Fotos. Nur lokale Ablage, nicht ausliefern.
 assets/img/_source/
+
+.vercel
+.env*
