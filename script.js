@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const textExperienceDE = "Erfahrungen & Produkte:\n 1. Falcos GmbH (Softwareentwickler Public Sector: XÖV-ZUGFeRD Parser, Top 100 EU-SDG Verwaltungsleistungen)\n 2. OVGU Magdeburg (Tutor in Algorithmen & Datenstrukturen + Vorkurstutor Mathematik)\n 3. Autohaus Kleinjena (Eigenentwicklung Web-Portal & Schaufenster: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-Entwickler E-Learning Plattform im Public Sector: https://fim-schulung.de/)\n 5. Softwareprojekt OSCAR (Modularer Semesterplanungs-Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 7. Autonomer Mähroboter & CJD Droyßig 3D-Schulcampus (Digitalisierungspreis)";
     const textExperienceEN = "Experience & Products:\n 1. Falcos GmbH (Software Developer Public Sector: XÖV-ZUGFeRD Parsers, Top 100 EU-SDG Services)\n 2. OVGU Magdeburg (Tutor in Algorithms & Data Structures + Mathematics Prep Course Tutor)\n 3. Autohaus Kleinjena (Full Web Portal & Car Showroom: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-developer E-Learning Platform Public Sector: https://fim-schulung.de/)\n 5. Software Project OSCAR (Modular Semester Planning Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 7. Autonomous Mower & CJD Droyßig 3D School Campus (Digitalization Award)";
 
-    const textWebsitesDE = "Highlights Web-Anwendungen:\n • Autohaus Kleinjena (Erstellt von Emin): https://autohaus-kleinjena.netlify.app/\n • FIM Schulung (Mit Kollegin verbessert): https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
-    const textWebsitesEN = "Featured Web Applications:\n • Autohaus Kleinjena (Created by Emin): https://autohaus-kleinjena.netlify.app/\n • FIM Schulung (Co-developed with colleague): https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
+    const textWebsitesDE = "Web-Anwendungen:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
+    const textWebsitesEN = "Web Applications:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
 
     const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU Magdeburg (Note 1,6 | 140 CP von regulär 120 CP), Schwerpunkte IT-Sicherheit & Data Science, e-fellows.net Stipendiat, Softwareentwickler @Falcos GmbH & FIN OVGU Tutor.";
     const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU Magdeburg (GPA 1.6 | 140 CP), focus IT Security & Data Science, e-fellows.net scholar, Software Developer @Falcos GmbH & FIN OVGU Tutor.";
@@ -415,11 +415,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Case Study Modals Data Map ---
     const caseStudies = {
         autohaus: {
-            title: "Autohaus Kleinjena Web-Portal",
-            type: "Web-Anwendung & Digitales Portal",
-            badgeClass: "badge-creator",
-            badgeDE: "✨ Eigenentwicklung",
-            badgeEN: "✨ Created by Emin",
+            title: "Autohaus Kleinjena",
+            type: "Webentwicklung",
+            badgeClass: "badge-context",
+            badgeDE: "Kundenprojekt",
+            badgeEN: "Client Project",
             problemDE: "Autohaus Kleinjena benötigte einen modernen, professionellen digitalen Web-Auftritt, um Fahrzeuge visuell zu präsentieren, Reparatur- und Service-Anfragen entgegenzunehmen und Kunden ohne Zwischenhändler anzusprechen.",
             problemEN: "Autohaus Kleinjena needed a modern, professional web platform to digitally showcase vehicles, handle repair & service inquiries, and reach customers directly.",
             solutionDE: "Vollständige Konzeption und Entwicklung eines responsiven Web-Portals mit modernem UI/UX-Design, interaktiver Fahrzeug-Filterung, Servicetermin-Modals und optimierter Ladezeit auf Netlify.",
@@ -431,15 +431,15 @@ document.addEventListener('DOMContentLoaded', () => {
             link: "https://autohaus-kleinjena.netlify.app/"
         },
         fim: {
-            title: "FIM Schulung – E-Learning Portal",
-            type: "E-Learning & Public Sector Plattform",
-            badgeClass: "badge-teamwork",
-            badgeDE: "🤝 Mit Kollegin verbessert",
-            badgeEN: "🤝 Co-developed with colleague",
+            title: "FIM Schulung – Lernportal",
+            type: "Öffentliche Verwaltung",
+            badgeClass: "badge-context",
+            badgeDE: "Berufsprojekt",
+            badgeEN: "Professional Project",
             problemDE: "Die bestehende Schulungsplattform für das Föderale Informationsmanagement (FIM) im Öffentlichen Sektor benötigte eine umfassende visuelle und funktionale Überarbeitung, um Lerninhalte barrierefrei und benutzerfreundlich zugänglich zu machen.",
             problemEN: "The existing training platform for Federal Information Management (FIM) in the public sector required a visual and functional overhaul to make learning content accessible and user-friendly.",
-            solutionDE: "Neugestaltung der Benutzeroberfläche gemeinsam mit einer Kollegin. Optimierung der Navigationsstruktur, barrierefreie WCAG-Zugänglichkeit und verständliches Lern-UI für Verwaltungsmitarbeiter.",
-            solutionEN: "Redesign of the UI co-developed with a colleague. Optimized navigation structure, WCAG accessibility compliance, and clear e-learning UI for public sector staff.",
+            solutionDE: "Neugestaltung der Benutzeroberfläche im Zweierteam. Optimierung der Navigationsstruktur, barrierefreie WCAG-Zugänglichkeit und verständliches Lern-UI für Verwaltungsmitarbeiter.",
+            solutionEN: "Redesign of the UI in a two-person team. Optimized navigation structure, WCAG accessibility compliance, and clear e-learning UI for public sector staff.",
             roleDE: "Frontend Developer & UI/UX Co-Creator. Tech-Stack: FIM Standard, Web-Standards, Accessibility Guidelines (WCAG 2.1 AA).",
             roleEN: "Frontend Developer & UI/UX Co-Creator. Tech-Stack: FIM Standard, Web Standards, Accessibility Guidelines (WCAG 2.1 AA).",
             impactDE: "Deutliche Verbesserung der Usability und Barrierefreiheit für Hunderte Lernende im FIM-Umfeld der öffentlichen Verwaltung.",
@@ -448,10 +448,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         falcos: {
             title: "Softwareentwicklung im Public Sector",
-            type: "Behörden-Automatisierung & Web-Engineering",
+            type: "Werkstudent seit 04/2024",
             badgeClass: "badge-work",
-            badgeDE: "Falcos GmbH Software Dev",
-            badgeEN: "Falcos GmbH Software Dev",
+            badgeDE: "Falcos GmbH",
+            badgeEN: "Falcos GmbH",
             problemDE: "Behörden und öffentliche Institutionen verarbeiten täglich große Mengen strukturierter und unstrukturierter Daten (XÖV / ZUGFeRD), was ohne Automatisierung zu hohen manuellen Erfassungszeiten führt.",
             problemEN: "Public sector entities handle large volumes of structured XÖV / ZUGFeRD data daily, causing high manual data entry workloads without automated processing.",
             solutionDE: "Entwicklung automatisierter XÖV-ZUGFeRD Parser, Docusaurus-Dokumentationsportale und LLM-gestützter Prozessautomatisierungen mit Google AppScripts und modernen Web-Frameworks.",
@@ -464,10 +464,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         sidum: {
             title: "Studentische Unternehmensberatung (SIDUM e.V.)",
-            type: "Finanzen & Recht Consulting",
+            type: "Ressort Finanzen & Recht",
             badgeClass: "badge-engagement",
-            badgeDE: "SIDUM e.V. Finanzen & Recht",
-            badgeEN: "SIDUM e.V. Finance & Legal",
+            badgeDE: "Ehrenamt",
+            badgeEN: "Volunteering",
             problemDE: "Komplexe Kreditentscheidungs-Prozesse in Banken und Finanzdienstleistern erfordern präzise Risikomodellierung und moderne GenAI-Anwendungsfälle.",
             problemEN: "Complex credit decision processes in financial institutions demand precise risk modeling and modern GenAI use cases.",
             solutionDE: "Mitarbeit an Expected-Goals-Kreditentscheidungsmodellen in Zusammenarbeit mit d-fine sowie Teilnahme an der zertifizierten PwC GenAI Masterclass für angewandte KI-Methoden.",
@@ -480,10 +480,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         mower: {
             title: "Autonomer Rasenmäherroboter",
-            type: "3D-Druck, Sensorik & Aktorik (Kursarbeit Informatik)",
+            type: "Mechatronik",
             badgeClass: "badge-hardware",
-            badgeDE: "🤖 3D-Druck & Sensorik",
-            badgeEN: "🤖 3D-Printing & Sensors",
+            badgeDE: "Eigenbau",
+            badgeEN: "Self-built",
             problemDE: "Entwicklung eines funktionalen, autonomen Rasenmäherroboters inklusive eigener Sensorik, Aktorik und Gehäusekonstruktion im Rahmen der Informatik-Kursarbeit.",
             problemEN: "Designing a functional autonomous robotic mower including custom sensors, actuators, and chassis construction for computer science coursework.",
             solutionDE: "Eigenhändiger 3D-Druck sämtlicher Kunststoffbauteile und Chassis-Komponenten. Programmierung der digitalen Steuerung, Sensorik und Aktorik im Zweierteam.",
@@ -495,11 +495,11 @@ document.addEventListener('DOMContentLoaded', () => {
             link: null
         },
         campus3d: {
-            title: "CJD Schulcampus 3D-Modellierung (1:150)",
-            type: "3D-CAD & Digitalisierung",
+            title: "Schulcampus-Modell (1:150)",
+            type: "3D-Druck & Modellbau",
             badgeClass: "badge-award",
-            badgeDE: "🏆 Sonderpreis Digitalisierung 2024",
-            badgeEN: "🏆 Digitalization Prize 2024",
+            badgeDE: "🏆 Sonderpreis Digitalisierung",
+            badgeEN: "🏆 Digitalization Award",
             problemDE: "Erstellung eines maßstabsgetreuen 3D-Modells des gesamten historischen Schulgebäudeensembles der CJD Christophorusschule Droyßig.",
             problemEN: "Creating a scale-accurate 3D model of the entire historical school building ensemble at CJD Droyßig.",
             solutionDE: "Digitalisierung historischer Baupläne, Fotos und Vermessungen mittels CAD-Software. 3D-Druck des kompletten Gebäudekomplexes im Maßstab 1:150 auf Hochschulniveau.",
@@ -512,10 +512,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         farafin: {
             title: "Fachschaftsrat der Fakultät für Informatik (FIN OVGU)",
-            type: "Gewählter Stellvertreter & IT-Adminreferat",
-            badgeClass: "badge-work",
-            badgeDE: "🏛️ Gewählter Stellvertreter",
-            badgeEN: "🏛️ Elected Representative",
+            type: "Hochschulgremium",
+            badgeClass: "badge-engagement",
+            badgeDE: "Ehrenamt",
+            badgeEN: "Volunteering",
             problemDE: "Betreuung und Koordination von über 150 Erstsemester-Studierenden, Vorbereitung von Großveranstaltungen und barrierefreie Wissensbereitstellung für Informatikstudierende an der OVGU.",
             problemEN: "Coordinating and guiding 150+ freshman students, managing large orientation events, and structuring knowledge access for CS students.",
             solutionDE: "Eigenverantwortliche Leitung von 2 Erstsemesterwochen (150+ / 80+ Studierende), Implementierung automatisierter Workflows mit n8n & LLMs für Fachschaftsprozesse, Ausbau des Wikis und Betreuung der IT-Infrastruktur.",
@@ -527,11 +527,11 @@ document.addEventListener('DOMContentLoaded', () => {
             link: "https://farafin.de"
         },
         oscar: {
-            title: "Softwareprojekt OSCAR",
-            type: "Semesterplanungs-Bot & Academic Roadmapper",
-            badgeClass: "badge-creator",
-            badgeDE: "✨ Softwareprojekt OVGU",
-            badgeEN: "✨ Software Project OVGU",
+            title: "OSCAR Semesterplaner",
+            type: "Discord-Bot",
+            badgeClass: "badge-context",
+            badgeDE: "Teamprojekt",
+            badgeEN: "Team Project",
             problemDE: "Informatik-Studierende stehen zu Studienbeginn vor der Herausforderung, komplexe Modulpläne, Voraussetzungen und Stundenpläne händisch abzugleichen.",
             problemEN: "Computer science freshmen face challenges manually aligning complex module plans, prerequisites, and schedules.",
             solutionDE: "Kollaborative Entwicklung eines modularen Bots (Organized Study Choice & Academic Roadmapper), der Studierende bei der Semesterplanung unterstützt und in die Erstsemesterwoche (Code Games) eingebettet wird.",
