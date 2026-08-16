@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const textSkillsDE = "IT: Java, Python, Web (HTML, CSS, JavaScript), SQL & Datenbanken, Git, Proxmox VE (Nextcloud, Paperless-ngx, Stirling-PDF, Firefly III, SearXNG, n8n), 3D-Druck (FDM), XÖV-Modellierung.\nZertifikate: Certified ScrumMaster® (CSM, 2025), FIM-Methodenexperte (2025), FIM-Informationsmanager.\nSprachen: Deutsch (Muttersprache), Englisch (kommunikationssicher).\nInteressen: Prozessautomatisierung (n8n & LLM), Digitale Souveränität Europas, Finanzbildung, IT-Podcasts (Kuketz, c't 3003).";
     const textSkillsEN = "IT: Java, Python, web (HTML, CSS, JavaScript), SQL & databases, Git, Proxmox VE (Nextcloud, Paperless-ngx, Stirling-PDF, Firefly III, SearXNG, n8n), 3D printing (FDM), XÖV modeling.\nCertificates: Certified ScrumMaster® (CSM, 2025), FIM Method Expert (2025), FIM Information Manager.\nLanguages: German (native), English (professional working proficiency).\nInterests: process automation (n8n & LLM), European digital sovereignty, financial literacy, IT podcasts (Kuketz, c't 3003).";
 
-    const textEngagementDE = "Engagement & Consulting:\n 1. Fachschaftsrat FIN OVGU (Gewählter Stellvertreter: Erstsemesterwochen für 150+ Studierende, IT-Adminreferat, Wiki-Ausbau)\n 2. SIDUM e.V. (Ressort Finanzen & Recht, PwC GenAI Masterclass, d-fine Kreditentscheidungs-Modelle, JC-NetworkDays)\n 3. CJD Droyßig (Gewählter Klassensprecher, 3D-Schulcampus Digitalpreis)";
-    const textEngagementEN = "Engagement & Consulting:\n 1. Student Council FIN OVGU (Elected Representative: Orientation weeks for 150+ students, IT Administration, Wiki expansion)\n 2. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine credit decision models, JC-NetworkDays)\n 3. CJD Droyßig (Elected Class Representative, 3D Campus Digitalization Award)";
+    const textEngagementDE = "Gesellschaftliches Engagement (ehrenamtlich):\n 1. Fachschaftsrat FIN OVGU (Gewählter Stellvertreter: Erstsemesterwochen für 150+ Studierende, IT-Adminreferat, Wiki-Ausbau)\n 2. CJD Droyßig (Gewählter Klassensprecher, 3D-Schulcampus Digitalpreis)\n\nFachliches Engagement:\n 1. SIDUM e.V. (Ressort Finanzen & Recht, PwC GenAI Masterclass, d-fine Kreditentscheidungs-Modelle, JC-NetworkDays)";
+    const textEngagementEN = "Community engagement (voluntary):\n 1. Student Council FIN OVGU (Elected Representative: Orientation weeks for 150+ students, IT Administration, Wiki expansion)\n 2. CJD Droyßig (Elected Class Representative, 3D Campus Digitalization Award)\n\nProfessional engagement:\n 1. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine credit decision models, JC-NetworkDays)";
 
     const textKontaktDE = "Kontakt:\n • E-Mail: emin.girimhanov@posteo.de\n • Telefon: +49 1522 9947465\n • Mastodon: machteburch.social/@emin\n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/\n • GitHub: https://github.com/emin-girimhanov";
     const textKontaktEN = "Contact:\n • E-Mail: emin.girimhanov@posteo.de\n • Phone: +49 1522 9947465\n • Mastodon: machteburch.social/@emin\n • LinkedIn: https://www.linkedin.com/in/emin-girimhanov/\n • GitHub: https://github.com/emin-girimhanov";
@@ -466,8 +466,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Studentische Unternehmensberatung (SIDUM e.V.)",
             type: "Ressort Finanzen & Recht",
             badgeClass: "badge-engagement",
-            badgeDE: "Ehrenamt",
-            badgeEN: "Volunteering",
+            badgeDE: "Fachliches Engagement",
+            badgeEN: "Professional Engagement",
             problemDE: "Kreditentscheidungen in Banken beruhen auf Risikomodellen. Im Workshop ging es um die Frage, wie sich solche Modelle sauber aufbauen lassen.",
             problemEN: "Credit decisions at banks rely on risk models. The workshop asked how such models can be built properly.",
             solutionDE: "Mitarbeit an Expected-Goals-Kreditentscheidungsmodellen in Zusammenarbeit mit d-fine sowie Teilnahme an der zertifizierten PwC GenAI Masterclass für angewandte KI-Methoden.",
