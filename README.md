@@ -1,12 +1,12 @@
 # Hi, ich bin Emin Girimhanov 👋
 
-Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdeburg (Schnitt 1,6). Als Softwareentwickler bei der Falcos GmbH arbeite ich an Systemen im Public Sector und erstelle moderne Web-Anwendungen.
+Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdeburg. Als Werkstudent bei der Falcos GmbH arbeite ich an Systemen im Public Sector und baue Web-Anwendungen.
 
 🌐 **Offizielle Webseite & Portfolio:** [emin-girimhanov.de](https://emin-girimhanov.de/)
 
 ## Ausgewählte Web-Projekte & Produkte
 
-* **[Autohaus Kleinjena](https://autohaus-kleinjena.netlify.app/)** – Digitales Autohaus-Portal mit modernem Fahrzeug-Schaufenster, interaktiver Bestandssuche, Terminbuchung und responsivem Design. *(Erstellt von Emin Girimhanov)*
+* **[Autohaus Kleinjena](https://autohaus-kleinjena.netlify.app/)** – Autohaus-Portal mit Fahrzeug-Übersicht, Bestandssuche, Terminanfrage und responsivem Design. *(Erstellt von Emin Girimhanov)*
 * **[FIM Schulung](https://fim-schulung.de/)** – Schulungs- und E-Learning-Plattform für das Föderale Informationsmanagement im Öffentlichen Sektor. *(Gemeinsam mit Kollegin überarbeitet und optimiert)*
 * **[Falcos GmbH Public Sector](https://falcos.de)** – Automatisierte XÖV-ZUGFeRD Parser, Docusaurus-Dokumentationsportale & LLM-Prozessautomatisierungen.
 
@@ -53,7 +53,7 @@ Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdebu
 
 # Hi, I am Emin Girimhanov 👋
 
-I study Business Informatics at Otto von Guericke University Magdeburg (GPA 1.6). I work as a Public Sector Software Developer at Falcos GmbH and build modern web products.
+I study Business Informatics at Otto von Guericke University Magdeburg. I work as a public sector software developer at Falcos GmbH and build web applications.
 
 🌐 **Website & Portfolio:** [emin-girimhanov.de](https://emin-girimhanov.de/)
 

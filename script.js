@@ -32,17 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
-    const textExperienceDE = "Erfahrungen & Produkte:\n 1. Falcos GmbH (Softwareentwickler Public Sector: XÖV-ZUGFeRD Parser, Top 100 EU-SDG Verwaltungsleistungen)\n 2. OVGU Magdeburg (Tutor in Algorithmen & Datenstrukturen + Vorkurstutor Mathematik)\n 3. Autohaus Kleinjena (Eigenentwicklung Web-Portal & Schaufenster: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-Entwickler E-Learning Plattform im Public Sector: https://fim-schulung.de/)\n 5. Softwareprojekt OSCAR (Modularer Semesterplanungs-Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 7. Autonomer Mähroboter & CJD Droyßig 3D-Schulcampus (Digitalisierungspreis)";
-    const textExperienceEN = "Experience & Products:\n 1. Falcos GmbH (Software Developer Public Sector: XÖV-ZUGFeRD Parsers, Top 100 EU-SDG Services)\n 2. OVGU Magdeburg (Tutor in Algorithms & Data Structures + Mathematics Prep Course Tutor)\n 3. Autohaus Kleinjena (Full Web Portal & Car Showroom: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-developer E-Learning Platform Public Sector: https://fim-schulung.de/)\n 5. Software Project OSCAR (Modular Semester Planning Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 7. Autonomous Mower & CJD Droyßig 3D School Campus (Digitalization Award)";
+    const textExperienceDE = "Erfahrungen & Produkte:\n 1. Falcos GmbH (Werkstudent Public Sector: XÖV-ZUGFeRD-Parser, Top-100-Verwaltungsleistungen des EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithmen & Datenstrukturen + Vorkurstutor Mathematik)\n 3. Autohaus Kleinjena (Eigenentwicklung Web-Portal & Schaufenster: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-Entwickler E-Learning Plattform im Public Sector: https://fim-schulung.de/)\n 5. Softwareprojekt OSCAR (Modularer Semesterplanungs-Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 7. Autonomer Mähroboter & CJD Droyßig 3D-Schulcampus (Digitalisierungspreis)";
+    const textExperienceEN = "Experience & Products:\n 1. Falcos GmbH (working student, public sector: XÖV-ZUGFeRD parsers, top 100 services of the EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithms & Data Structures + Mathematics Prep Course Tutor)\n 3. Autohaus Kleinjena (Full Web Portal & Car Showroom: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-developer E-Learning Platform Public Sector: https://fim-schulung.de/)\n 5. Software Project OSCAR (Modular Semester Planning Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 7. Autonomous Mower & CJD Droyßig 3D School Campus (Digitalization Award)";
 
     const textWebsitesDE = "Web-Anwendungen:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
     const textWebsitesEN = "Web Applications:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
 
-    const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU Magdeburg (Note 1,6 | 140 CP von regulär 120 CP), Schwerpunkte IT-Sicherheit & Data Science, e-fellows.net Stipendiat, Softwareentwickler @Falcos GmbH & FIN OVGU Tutor.";
-    const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU Magdeburg (GPA 1.6 | 140 CP), focus IT Security & Data Science, e-fellows.net scholar, Software Developer @Falcos GmbH & FIN OVGU Tutor.";
+    const textWhoamiDE = "Emin Girimhanov. B.Sc. Wirtschaftsinformatik-Student @OVGU Magdeburg, Schwerpunkte IT-Sicherheit & Data Science, e-fellows.net Stipendiat, Werkstudent @Falcos GmbH & Tutor an der FIN OVGU.";
+    const textWhoamiEN = "Emin Girimhanov. Business Informatics student @OVGU Magdeburg, focus IT Security & Data Science, e-fellows.net scholar, working student @Falcos GmbH & tutor at FIN OVGU.";
 
-    const textSkillsDE = "IT & Stack: Java, Python, JavaScript/TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE (Nextcloud, Paperless-ngx, Stirling, Firefly III, SearXNG, n8n), 3D-Druck (FDM), XÖV-Modellierung, Git.\nZertifikate: Certified ScrumMaster® (CSM), FIM-Informationsmanager.\nInteressen: Process Automation (n8n & LLM), Digitale Souveränität Europas, Finanzbildung.";
-    const textSkillsEN = "IT & Stack: Java, Python, JavaScript/TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE (Nextcloud, Paperless-ngx, Stirling, Firefly III, SearXNG, n8n), 3D Printing (FDM), XÖV Modeling, Git.\nCertificates: Certified ScrumMaster® (CSM), FIM Information Manager.\nInterests: Process Automation (n8n & LLM), European Digital Sovereignty, Financial Literacy.";
+    const textSkillsDE = "IT & Stack: Java, Python, JavaScript/TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE (Nextcloud, Paperless-ngx, Stirling, Firefly III, SearXNG, n8n), 3D-Druck (FDM), XÖV-Modellierung, Git.\nZertifikate: Certified ScrumMaster® (CSM), FIM-Informationsmanager, FIM-Methodenexperte.\nInteressen: Process Automation (n8n & LLM), Digitale Souveränität Europas, Finanzbildung.";
+    const textSkillsEN = "IT & Stack: Java, Python, JavaScript/TypeScript, React, Node.js, Docusaurus, SQL, Proxmox VE (Nextcloud, Paperless-ngx, Stirling, Firefly III, SearXNG, n8n), 3D Printing (FDM), XÖV Modeling, Git.\nCertificates: Certified ScrumMaster® (CSM), FIM Information Manager, FIM Method Expert.\nInterests: Process Automation (n8n & LLM), European Digital Sovereignty, Financial Literacy.";
 
     const textEngagementDE = "Engagement & Consulting:\n 1. Fachschaftsrat FIN OVGU (Gewählter Stellvertreter: Erstsemesterwochen für 150+ Studierende, IT-Adminreferat, Wiki-Ausbau)\n 2. SIDUM e.V. (Ressort Finanzen & Recht, PwC GenAI Masterclass, d-fine Kreditentscheidungs-Modelle, JC-NetworkDays)\n 3. CJD Droyßig (Gewählter Klassensprecher, 3D-Schulcampus Digitalpreis)";
     const textEngagementEN = "Engagement & Consulting:\n 1. Student Council FIN OVGU (Elected Representative: Orientation weeks for 150+ students, IT Administration, Wiki expansion)\n 2. SIDUM e.V. (Finance & Legal, PwC GenAI Masterclass, d-fine credit decision models, JC-NetworkDays)\n 3. CJD Droyßig (Elected Class Representative, 3D Campus Digitalization Award)";
@@ -420,14 +420,14 @@ document.addEventListener('DOMContentLoaded', () => {
             badgeClass: "badge-context",
             badgeDE: "Kundenprojekt",
             badgeEN: "Client Project",
-            problemDE: "Autohaus Kleinjena benötigte einen modernen, professionellen digitalen Web-Auftritt, um Fahrzeuge visuell zu präsentieren, Reparatur- und Service-Anfragen entgegenzunehmen und Kunden ohne Zwischenhändler anzusprechen.",
-            problemEN: "Autohaus Kleinjena needed a modern, professional web platform to digitally showcase vehicles, handle repair & service inquiries, and reach customers directly.",
-            solutionDE: "Vollständige Konzeption und Entwicklung eines responsiven Web-Portals mit modernem UI/UX-Design, interaktiver Fahrzeug-Filterung, Servicetermin-Modals und optimierter Ladezeit auf Netlify.",
-            solutionEN: "Full design and development of a responsive web portal featuring a modern UI/UX design, interactive vehicle showcase, service booking modals, and optimized loading times on Netlify.",
+            problemDE: "Autohaus Kleinjena hatte keinen eigenen Web-Auftritt. Fahrzeuge sollten sichtbar werden und Kunden sollten Service-Anfragen direkt stellen können.",
+            problemEN: "Autohaus Kleinjena had no website of its own. Vehicles needed to be visible, and customers needed a direct way to send service requests.",
+            solutionDE: "Konzeption und Entwicklung eines responsiven Web-Portals mit Fahrzeug-Filterung und Modals für Servicetermine. Gehostet auf Netlify.",
+            solutionEN: "Designed and built a responsive web portal with vehicle filtering and modals for service appointments. Hosted on Netlify.",
             roleDE: "Full-Stack Webentwickler & Designer (Eigenentwicklung). Tech-Stack: HTML5, CSS3, JavaScript, Netlify Hosting, SEO & Accessibility Optimierung.",
             roleEN: "Full-Stack Web Developer & Designer (Independent Project). Tech-Stack: HTML5, CSS3, JavaScript, Netlify Hosting, SEO & Accessibility Optimization.",
-            impactDE: "Digitale Präsenz für Autohaus Kleinjena, messbare Steigerung von Online-Serviceanfragen und performante Auslieferung über globales CDN.",
-            impactEN: "Digital presence for Autohaus Kleinjena, measurable increase in online service inquiries, and high performance via global CDN.",
+            impactDE: "Das Autohaus hat jetzt eine eigene Webseite mit Fahrzeugübersicht und Kontaktformular. Ausgeliefert wird sie über das CDN von Netlify. Zahlen zu Serviceanfragen liegen mir nicht vor.",
+            impactEN: "The dealership now has its own website with a vehicle overview and contact form, delivered via the Netlify CDN. I do not have figures on inquiry volume.",
             link: "https://autohaus-kleinjena.netlify.app/"
         },
         fim: {
@@ -436,14 +436,14 @@ document.addEventListener('DOMContentLoaded', () => {
             badgeClass: "badge-context",
             badgeDE: "Berufsprojekt",
             badgeEN: "Professional Project",
-            problemDE: "Die bestehende Schulungsplattform für das Föderale Informationsmanagement (FIM) im Öffentlichen Sektor benötigte eine umfassende visuelle und funktionale Überarbeitung, um Lerninhalte barrierefrei und benutzerfreundlich zugänglich zu machen.",
-            problemEN: "The existing training platform for Federal Information Management (FIM) in the public sector required a visual and functional overhaul to make learning content accessible and user-friendly.",
-            solutionDE: "Neugestaltung der Benutzeroberfläche im Zweierteam. Optimierung der Navigationsstruktur, barrierefreie WCAG-Zugänglichkeit und verständliches Lern-UI für Verwaltungsmitarbeiter.",
-            solutionEN: "Redesign of the UI in a two-person team. Optimized navigation structure, WCAG accessibility compliance, and clear e-learning UI for public sector staff.",
-            roleDE: "Frontend Developer & UI/UX Co-Creator. Tech-Stack: FIM Standard, Web-Standards, Accessibility Guidelines (WCAG 2.1 AA).",
-            roleEN: "Frontend Developer & UI/UX Co-Creator. Tech-Stack: FIM Standard, Web Standards, Accessibility Guidelines (WCAG 2.1 AA).",
-            impactDE: "Deutliche Verbesserung der Usability und Barrierefreiheit für Hunderte Lernende im FIM-Umfeld der öffentlichen Verwaltung.",
-            impactEN: "Significant improvement in usability and accessibility for hundreds of learners across public administration.",
+            problemDE: "Die bestehende Schulungsplattform für das Föderale Informationsmanagement (FIM) war visuell und funktional veraltet. Lerninhalte sollten barrierefrei und leichter auffindbar werden.",
+            problemEN: "The existing training platform for Federal Information Management (FIM) was visually and functionally outdated. Learning content needed to be accessible and easier to find.",
+            solutionDE: "Neugestaltung der Benutzeroberfläche im Zweierteam. Neue Navigationsstruktur und ein Lern-UI, das Verwaltungsmitarbeiter ohne Vorwissen bedienen können.",
+            solutionEN: "Redesigned the UI in a two-person team. New navigation structure and a learning UI that public sector staff can use without prior knowledge.",
+            roleDE: "Frontend-Entwicklung und UI/UX im Zweierteam. Tech-Stack: FIM-Standard, Web-Standards, WCAG 2.1 AA als Richtschnur. Ein förmliches Barrierefreiheits-Audit gab es nicht.",
+            roleEN: "Frontend development and UI/UX in a two-person team. Tech stack: FIM standard, web standards, WCAG 2.1 AA as a guideline. There was no formal accessibility audit.",
+            impactDE: "Die überarbeitete Plattform ist unter fim-schulung.de öffentlich erreichbar. Belastbare Nutzungszahlen habe ich nicht.",
+            impactEN: "The reworked platform is publicly available at fim-schulung.de. I do not have reliable usage figures.",
             link: "https://fim-schulung.de/"
         },
         falcos: {
@@ -454,12 +454,12 @@ document.addEventListener('DOMContentLoaded', () => {
             badgeEN: "Falcos GmbH",
             problemDE: "Behörden und öffentliche Institutionen verarbeiten täglich große Mengen strukturierter und unstrukturierter Daten (XÖV / ZUGFeRD), was ohne Automatisierung zu hohen manuellen Erfassungszeiten führt.",
             problemEN: "Public sector entities handle large volumes of structured XÖV / ZUGFeRD data daily, causing high manual data entry workloads without automated processing.",
-            solutionDE: "Entwicklung automatisierter XÖV-ZUGFeRD Parser, Docusaurus-Dokumentationsportale und LLM-gestützter Prozessautomatisierungen mit Google AppScripts und modernen Web-Frameworks.",
-            solutionEN: "Developing automated XÖV-ZUGFeRD parsers, Docusaurus documentation portals, and LLM-assisted process automation using Google AppScripts and web frameworks.",
+            solutionDE: "Entwicklung von XÖV-ZUGFeRD-Parsern, Dokumentationsportalen mit Docusaurus und LLM-gestützten Prozessautomatisierungen mit Google AppScripts.",
+            solutionEN: "Building XÖV-ZUGFeRD parsers, documentation portals with Docusaurus, and LLM-assisted process automation using Google AppScripts.",
             roleDE: "Softwareentwickler im Public Sector @ Falcos GmbH. Tech-Stack: Python, Java, TypeScript, XÖV, Docusaurus, WordPress, LLM / AppScripts.",
             roleEN: "Public Sector Software Developer @ Falcos GmbH. Tech-Stack: Python, Java, TypeScript, XÖV, Docusaurus, WordPress, LLM / AppScripts.",
-            impactDE: "Drastische Reduktion manueller Datenerfassungszeiten in Behörden und Bereitstellung hochverfügbarer Dokumentations-Frameworks.",
-            impactEN: "Drastic reduction in manual data entry processing times for public administration partners.",
+            impactDE: "Rechnungsdaten aus ZUGFeRD werden ausgelesen, statt von Hand abgetippt zu werden. Konkrete Kennzahlen kann ich öffentlich nicht nennen.",
+            impactEN: "ZUGFeRD invoice data is parsed instead of being typed in by hand. I cannot share concrete figures publicly.",
             link: "https://falcos.de"
         },
         sidum: {
@@ -468,14 +468,14 @@ document.addEventListener('DOMContentLoaded', () => {
             badgeClass: "badge-engagement",
             badgeDE: "Ehrenamt",
             badgeEN: "Volunteering",
-            problemDE: "Komplexe Kreditentscheidungs-Prozesse in Banken und Finanzdienstleistern erfordern präzise Risikomodellierung und moderne GenAI-Anwendungsfälle.",
-            problemEN: "Complex credit decision processes in financial institutions demand precise risk modeling and modern GenAI use cases.",
+            problemDE: "Kreditentscheidungen in Banken beruhen auf Risikomodellen. Im Workshop ging es um die Frage, wie sich solche Modelle sauber aufbauen lassen.",
+            problemEN: "Credit decisions at banks rely on risk models. The workshop asked how such models can be built properly.",
             solutionDE: "Mitarbeit an Expected-Goals-Kreditentscheidungsmodellen in Zusammenarbeit mit d-fine sowie Teilnahme an der zertifizierten PwC GenAI Masterclass für angewandte KI-Methoden.",
             solutionEN: "Collaborating on Expected-Goals credit decision models with d-fine and completing the certified PwC GenAI Masterclass for applied AI methods.",
             roleDE: "Consultant / Ressort Finanzen & Recht @ SIDUM e.V. Tech-Stack: Expected-Goals-Modellierung, d-fine Workshop, PwC GenAI Frameworks.",
             roleEN: "Consultant / Finance & Legal @ SIDUM e.V. Tech-Stack: Expected-Goals Modeling, d-fine Workshop, PwC GenAI Frameworks.",
-            impactDE: "Optimierung von Risikobewertungsmodellen und Transfer moderner Generativer KI-Ansätze in Beratungskonzepte.",
-            impactEN: "Optimization of risk assessment models and application of generative AI methodologies to consulting cases.",
+            impactDE: "Ergebnis war ein Modellentwurf im Workshop-Kontext, kein produktives System. Die PwC GenAI Masterclass habe ich abgeschlossen.",
+            impactEN: "The outcome was a model draft in a workshop setting, not a production system. I completed the PwC GenAI Masterclass.",
             link: "https://www.sidum.de/"
         },
         mower: {
@@ -490,8 +490,8 @@ document.addEventListener('DOMContentLoaded', () => {
             solutionEN: "Custom 3D printing of all plastic chassis components. Programming digital control, sensors, and actuators in a 2-person team.",
             roleDE: "Hardware & Software Co-Developer. Tech-Stack: FDM 3D-Druck, Sensorik & Aktorik, Digitale Steuerung, Python, CAD.",
             roleEN: "Hardware & Software Co-Developer. Tech-Stack: FDM 3D Printing, Sensors & Actuators, Digital Control, Python, CAD.",
-            impactDE: "Geniestreich in der Kursarbeit Informatik: Voll funktionsfähiger Mähroboter mit selbst gedruckten Bauteilen und autonomer Sensorik.",
-            impactEN: "Outstanding computer science coursework project: Fully functional robotic mower with self-printed components and autonomous sensors.",
+            impactDE: "Der Roboter war am Ende funktionsfähig und fuhr autonom. Alle Kunststoffteile stammten aus dem eigenen 3D-Drucker.",
+            impactEN: "The robot worked in the end and drove autonomously. All plastic parts came from my own 3D printer.",
             link: null
         },
         campus3d: {
@@ -502,8 +502,8 @@ document.addEventListener('DOMContentLoaded', () => {
             badgeEN: "🏆 Digitalization Award",
             problemDE: "Erstellung eines maßstabsgetreuen 3D-Modells des gesamten historischen Schulgebäudeensembles der CJD Christophorusschule Droyßig.",
             problemEN: "Creating a scale-accurate 3D model of the entire historical school building ensemble at CJD Droyßig.",
-            solutionDE: "Digitalisierung historischer Baupläne, Fotos und Vermessungen mittels CAD-Software. 3D-Druck des kompletten Gebäudekomplexes im Maßstab 1:150 auf Hochschulniveau.",
-            solutionEN: "Digitalizing historical building plans, photos, and site measurements using CAD software. 3D printing the entire campus ensemble at 1:150 scale ('university level').",
+            solutionDE: "Digitalisierung historischer Baupläne, Fotos und Vermessungen mit CAD-Software. 3D-Druck des kompletten Gebäudekomplexes im Maßstab 1:150.",
+            solutionEN: "Digitalized historical building plans, photos, and site measurements using CAD software. 3D printed the entire campus ensemble at 1:150 scale.",
             roleDE: "Projektleiter & CAD-Designer. Tech-Stack: CAD (Computer-Aided Design), FDM 3D-Druck, Bauplandigitalisierung.",
             roleEN: "Project Lead & CAD Designer. Tech-Stack: CAD (Computer-Aided Design), FDM 3D Printing, Architectural Digitalization.",
             impactDE: "Ausgezeichnet mit dem 'Sonderpreis für Digitalisierung / Modellierung / Digitaltechnik 2024'. Das Modell ist dauerhaft im Paulusraum der Schule ausgestellt.",
@@ -522,8 +522,8 @@ document.addEventListener('DOMContentLoaded', () => {
             solutionEN: "Leading 2 orientation weeks for 150+ / 80+ students, implementing automated workflows with n8n & LLMs for student council tasks, expanding the internal wiki, and managing council IT.",
             roleDE: "Gewählter Stellvertreter & IT-Adminreferat. Tech-Stack: n8n, LLM Workflows, MediaWiki, Linux Server, Event Logistik.",
             roleEN: "Elected Representative & IT Administrator. Tech-Stack: n8n, LLM Workflows, MediaWiki, Linux Server, Event Logistics.",
-            impactDE: "Erfolgreiche Integration von Hunderten Erstsemestern, nachhaltiges Wissensmanagement und moderne n8n/LLM-Prozessautomatisierung.",
-            impactEN: "Successful onboarding of hundreds of CS students, scalable knowledge retention, and modern n8n/LLM process automation.",
+            impactDE: "Zwei Erstsemesterwochen sind gelaufen. Das Wiki wird weiter genutzt, mehrere wiederkehrende Abläufe laufen jetzt automatisch.",
+            impactEN: "Two orientation weeks took place. The wiki is still in use, and several recurring tasks now run automatically.",
             link: "https://farafin.de"
         },
         oscar: {
@@ -538,8 +538,8 @@ document.addEventListener('DOMContentLoaded', () => {
             solutionEN: "Collaborative development of a modular bot (Organized Study Choice & Academic Roadmapper) assisting students in course scheduling and integrated into freshman Code Games.",
             roleDE: "Softwareentwickler im Team. Tech-Stack: Python, Bot-Frameworks, Modular Architecture, Academic Roadmapping.",
             roleEN: "Software Developer in Team. Tech-Stack: Python, Bot Frameworks, Modular Architecture, Academic Roadmapping.",
-            impactDE: "Zeitersparnis bei der Stundenplanerstellung und Skalierbarkeit für weitere Fakultäten der OVGU Magdeburg.",
-            impactEN: "Time savings in schedule planning and scalability across multiple faculties at OVGU Magdeburg.",
+            impactDE: "Der Bot läuft auf dem Discord-Server FIN EMporium und hilft bei der Stundenplanung. Andere Fakultäten nutzen ihn bisher nicht.",
+            impactEN: "The bot runs on the FIN EMporium Discord server and helps with course scheduling. No other faculty uses it so far.",
             link: "https://isggit3.cs.ovgu.de/studium-lehre/discord-bot"
         }
     };
