@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let i = 0;
         const chunkSize = 1;
-        const speed = 18;
+        const speed = 13;   // Millisekunden je Zeichen
 
         currentTypingTimer = setInterval(() => {
             if (i < responseText.length) {
@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
             roleEN: "Software Developer in Team. Tech-Stack: Python, Bot Frameworks, Modular Architecture, Academic Roadmapping.",
             impactDE: "Zeitersparnis bei der Stundenplanerstellung und Skalierbarkeit für weitere Fakultäten der OVGU Magdeburg.",
             impactEN: "Time savings in schedule planning and scalability across multiple faculties at OVGU Magdeburg.",
-            link: null
+            link: "https://isggit3.cs.ovgu.de/studium-lehre/discord-bot"
         }
     };
 
