@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const langLabel = document.getElementById('lang-label');
     let currentLang = localStorage.getItem('site-lang') || 'de';
 
-    const textExperienceDE = "Erfahrungen & Produkte:\n 1. Falcos GmbH (Werkstudent Public Sector: XÖV-ZUGFeRD-Parser, Top-100-Verwaltungsleistungen des EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithmen & Datenstrukturen + Vorkurstutor Mathematik)\n 3. Autohaus Kleinjena (Eigenentwicklung Web-Portal & Schaufenster: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-Entwickler E-Learning Plattform im Public Sector: https://fim-schulung.de/)\n 5. Softwareprojekt OSCAR (Modularer Semesterplanungs-Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 7. Autonomer Mähroboter & CJD Droyßig 3D-Schulcampus (Digitalisierungspreis)";
-    const textExperienceEN = "Experience & Products:\n 1. Falcos GmbH (working student, public sector: XÖV-ZUGFeRD parsers, top 100 services of the EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithms & Data Structures + Mathematics Prep Course Tutor)\n 3. Autohaus Kleinjena (Full Web Portal & Car Showroom: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-developer E-Learning Platform Public Sector: https://fim-schulung.de/)\n 5. Software Project OSCAR (Modular Semester Planning Bot & Academic Roadmapper)\n 6. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 7. Autonomous Mower & CJD Droyßig 3D School Campus (Digitalization Award)";
+    const textExperienceDE = "Erfahrungen & Produkte:\n 1. Falcos GmbH (Werkstudent Public Sector: XÖV-ZUGFeRD-Parser, Top-100-Verwaltungsleistungen des EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithmen & Datenstrukturen + Vorkurstutor Mathematik)\n 3. Autohaus Kleinjena (Eigenentwicklung Web-Portal & Schaufenster: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-Entwickler E-Learning Plattform im Public Sector: https://fim-schulung.de/)\n 5. Softwareprojekt OSCAR (selbst gewähltes Studienprojekt im Viererteam: modularer Discord-Bot zur Semesterplanung)\n 6. SIDUM e.V. (Kreditentscheidungs-Use-Cases mit d-fine & PwC GenAI Masterclass)\n 7. Autonomer Mähroboter & CJD Droyßig 3D-Schulcampus (Digitalisierungspreis)";
+    const textExperienceEN = "Experience & Products:\n 1. Falcos GmbH (working student, public sector: XÖV-ZUGFeRD parsers, top 100 services of the EU Single Digital Gateway)\n 2. OVGU Magdeburg (Tutor in Algorithms & Data Structures + Mathematics Prep Course Tutor)\n 3. Autohaus Kleinjena (Full Web Portal & Car Showroom: https://autohaus-kleinjena.netlify.app/)\n 4. FIM Schulung (Co-developer E-Learning Platform Public Sector: https://fim-schulung.de/)\n 5. Software project OSCAR (self-chosen university project, team of four: modular Discord bot for semester planning)\n 6. SIDUM e.V. (Credit decision models with d-fine & PwC GenAI Masterclass)\n 7. Autonomous Mower & CJD Droyßig 3D School Campus (Digitalization Award)";
 
     const textWebsitesDE = "Web-Anwendungen:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
     const textWebsitesEN = "Web Applications:\n • Autohaus Kleinjena: https://autohaus-kleinjena.netlify.app/\n • FIM Schulung: https://fim-schulung.de/\n • Falcos GmbH Public Sector: https://falcos.de/";
@@ -528,16 +528,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         oscar: {
             title: "OSCAR Semesterplaner",
-            type: "Discord-Bot",
+            type: "Softwareprojekt im Studium",
             badgeClass: "badge-context",
-            badgeDE: "Teamprojekt",
-            badgeEN: "Team Project",
-            problemDE: "Informatik-Studierende stehen zu Studienbeginn vor der Herausforderung, komplexe Modulpläne, Voraussetzungen und Stundenpläne händisch abzugleichen.",
-            problemEN: "Computer science freshmen face challenges manually aligning complex module plans, prerequisites, and schedules.",
-            solutionDE: "Kollaborative Entwicklung eines modularen Bots (Organized Study Choice & Academic Roadmapper), der Studierende bei der Semesterplanung unterstützt und in die Erstsemesterwoche (Code Games) eingebettet wird.",
-            solutionEN: "Collaborative development of a modular bot (Organized Study Choice & Academic Roadmapper) assisting students in course scheduling and integrated into freshman Code Games.",
-            roleDE: "Softwareentwickler im Team. Tech-Stack: Python, Bot-Frameworks, Modular Architecture, Academic Roadmapping.",
-            roleEN: "Software Developer in Team. Tech-Stack: Python, Bot Frameworks, Modular Architecture, Academic Roadmapping.",
+            badgeDE: "Studienprojekt",
+            badgeEN: "University Project",
+            problemDE: "Informatik-Studierende gleichen zu Studienbeginn Modulpläne, Voraussetzungen und Stundenpläne von Hand ab. Das Thema haben wir uns im Softwareprojekt selbst ausgesucht.",
+            problemEN: "Computer science freshmen align module plans, prerequisites, and schedules by hand. We chose this topic ourselves for the university software project.",
+            solutionDE: "Im Viererteam entstand ein modularer Discord-Bot (Organized Study Choice & Academic Roadmapper). Er unterstützt bei der Semesterplanung und soll in die Erstsemesterwoche und die Grundlagenveranstaltungen (Code Games) eingebettet werden.",
+            solutionEN: "A team of four built a modular Discord bot (Organized Study Choice & Academic Roadmapper). It supports semester planning and is meant to be embedded into the orientation week and the introductory courses (Code Games).",
+            roleDE: "Softwareentwickler in einem Team aus vier Kommilitonen. Tech-Stack: Python, Bot-Frameworks, modulare Architektur.",
+            roleEN: "Software developer in a team of four fellow students. Tech stack: Python, bot frameworks, modular architecture.",
             impactDE: "Der Bot läuft auf dem Discord-Server FIN EMporium und hilft bei der Stundenplanung. Andere Fakultäten nutzen ihn bisher nicht.",
             impactEN: "The bot runs on the FIN EMporium Discord server and helps with course scheduling. No other faculty uses it so far.",
             link: "https://isggit3.cs.ovgu.de/studium-lehre/discord-bot"

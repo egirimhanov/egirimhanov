@@ -44,7 +44,7 @@ Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdebu
 | **Fachschaftsrat FIN** | Stellvertreter & IT-Referat | Event-Leitung &amp; Logistik für 150+ Erstsemester; Skalierung der internen Knowledge-Base via Wiki. |
 | **Hardware & Maker** | Autonomer Mähroboter | Raspberry Pi, Python-Sensorik und 3D-Druck zur Automatisierung von Rasenpflege. |
 | **Schulcampus Droyßig** | CAD 3D-Modell (1:150) | Eigeninitiierte Modellierung &amp; 3D-Druck. Ausgezeichnet mit dem Digitalisierungspreis für räumliche Campusplanung. |
-| **Projekt OSCAR** | Softwareprojekt | Semesterplanungs-Bot zur Optimierung der Stundenplanerstellung für Informatikstudierende. |
+| **Projekt OSCAR** | Softwareprojekt im Studium | Selbst gewähltes Thema, entwickelt im Viererteam: Discord-Bot zur Semesterplanung für Informatikstudierende. |
 
 <br/>
 
