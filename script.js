@@ -538,8 +538,8 @@ document.addEventListener('DOMContentLoaded', () => {
             solutionEN: "A team of four built a modular Discord bot (Organized Study Choice & Academic Roadmapper). It supports semester planning and is meant to be embedded into the orientation week and the introductory courses (Code Games).",
             roleDE: "Softwareentwickler in einem Team aus vier Kommilitonen. Tech-Stack: Python, Bot-Frameworks, modulare Architektur.",
             roleEN: "Software developer in a team of four fellow students. Tech stack: Python, bot frameworks, modular architecture.",
-            impactDE: "Der Bot läuft auf dem Discord-Server FIN EMporium und hilft bei der Stundenplanung. Andere Fakultäten nutzen ihn bisher nicht.",
-            impactEN: "The bot runs on the FIN EMporium Discord server and helps with course scheduling. No other faculty uses it so far.",
+            impactDE: "Das Projekt ist abgeschlossen. Der Bot läuft auf dem Discord-Server FIN EMporium und hilft bei der Stundenplanung. Geplant sind der Export auf weitere Fakultäten und ein GitHub-Repository, damit auch andere Hochschulen ihn nutzen können.",
+            impactEN: "The project is finished. The bot runs on the FIN EMporium Discord server and helps with course scheduling. An export to other faculties and a GitHub repository are planned, so other universities can use it too.",
             link: "https://isggit3.cs.ovgu.de/studium-lehre/discord-bot"
         }
     };
