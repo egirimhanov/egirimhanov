@@ -448,7 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         falcos: {
             title: "Softwareentwicklung im Public Sector",
-            type: "Werkstudent seit 04/2024",
+            type: "Werkstudent seit 06/2025",
             badgeClass: "badge-work",
             badgeDE: "Falcos GmbH",
             badgeEN: "Falcos GmbH",
