@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
             roleEN: "Consultant / Finance & Legal @ SIDUM e.V. Tech-Stack: Expected-Goals Modeling, d-fine Workshop, PwC GenAI Frameworks.",
             impactDE: "Optimierung von Risikobewertungsmodellen und Transfer moderner Generativer KI-Ansätze in Beratungskonzepte.",
             impactEN: "Optimization of risk assessment models and application of generative AI methodologies to consulting cases.",
-            link: null
+            link: "https://www.sidum.de/"
         },
         mower: {
             title: "Autonomer Rasenmäherroboter",
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
             roleEN: "Elected Representative & IT Administrator. Tech-Stack: n8n, LLM Workflows, MediaWiki, Linux Server, Event Logistics.",
             impactDE: "Erfolgreiche Integration von Hunderten Erstsemestern, nachhaltiges Wissensmanagement und moderne n8n/LLM-Prozessautomatisierung.",
             impactEN: "Successful onboarding of hundreds of CS students, scalable knowledge retention, and modern n8n/LLM process automation.",
-            link: null
+            link: "https://farafin.de"
         },
         oscar: {
             title: "Softwareprojekt OSCAR",
