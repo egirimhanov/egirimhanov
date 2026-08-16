@@ -1,8 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
-  <rect width="1200" height="675" fill="#1e1b18"/>
-  <text x="60" y="160" fill="#facc15" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">SPECIAL DIGITALIZATION AWARD</text>
-  <text x="60" y="210" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36">CJD Schulcampus 3D-Modellierung (1:150)</text>
-  <rect x="60" y="260" width="1080" height="360" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(250,204,21,0.3)"/>
-  <text x="600" y="440" fill="#facc15" font-family="sans-serif" font-size="64" text-anchor="middle">🏆 🏛️ 📐</text>
-  <text x="600" y="520" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">CAD Raumplanung, 3D-Druck Präzision &amp; Digitalisierungspreis</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgCjd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="50%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow3d" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgCjd)"/>
+  
+  <!-- Certificate Banner Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0f172a"/>
+  <text x="40" y="38" font-family="sans-serif" font-size="14" font-weight="700" fill="#f59e0b" letter-spacing="1.5">🏆 SONDERPREIS FÜR DIGITALISIERUNG &amp; MODELLIERUNG 2024</text>
+  <text x="1160" y="38" font-family="sans-serif" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="end">CJD Christophorusschule Droyßig</text>
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Model Stand / Table -->
+  <polygon points="150,560 1050,560 1150,650 50,650" fill="#334155" stroke="#475569" stroke-width="2" filter="url(#shadow3d)"/>
+
+  <!-- 3D Printed Buildings Ensemble (CJD Droyßig School Campus) -->
+  <!-- Main Building Back Wing -->
+  <polygon points="300,280 850,280 850,420 300,420" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="300,280 850,280 880,240 330,240" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <!-- Roof Windows/Gables -->
+  <polygon points="350,240 380,210 410,240" fill="#ef4444"/>
+  <polygon points="500,240 530,210 560,240" fill="#ef4444"/>
+  <polygon points="650,240 680,210 710,240" fill="#ef4444"/>
+  <polygon points="800,240 830,210 860,240" fill="#ef4444"/>
+
+  <!-- Central Clock Tower -->
+  <rect x="560" y="160" width="70" height="120" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="560,160 595,90 630,160" fill="#dc2626"/>
+  <circle cx="595" cy="200" r="14" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Left Courtyard Wing -->
+  <polygon points="220,350 340,350 340,540 220,540" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="220,350 340,350 370,310 250,310" fill="#e2e8f0"/>
+
+  <!-- Right Courtyard Wing -->
+  <polygon points="810,350 930,350 930,540 810,540" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="810,350 930,350 960,310 840,310" fill="#e2e8f0"/>
+
+  <!-- Windows Grid Simulation -->
+  <g fill="#475569">
+    <rect x="330" y="300" width="12" height="18"/><rect x="360" y="300" width="12" height="18"/><rect x="390" y="300" width="12" height="18"/><rect x="420" y="300" width="12" height="18"/><rect x="450" y="300" width="12" height="18"/>
+    <rect x="330" y="340" width="12" height="18"/><rect x="360" y="340" width="12" height="18"/><rect x="390" y="340" width="12" height="18"/><rect x="420" y="340" width="12" height="18"/><rect x="450" y="340" width="12" height="18"/>
+    <rect x="670" y="300" width="12" height="18"/><rect x="700" y="300" width="12" height="18"/><rect x="730" y="300" width="12" height="18"/><rect x="760" y="300" width="12" height="18"/><rect x="790" y="300" width="12" height="18"/>
+  </g>
+
+  <!-- Overlay Text Badge -->
+  <rect x="40" y="580" width="460" height="60" rx="10" fill="rgba(15, 23, 42, 0.9)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="60" y="605" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff">CJD Schulcampus Droyßig (1:150 Modell)</text>
+  <text x="60" y="625" font-family="sans-serif" font-size="12" fill="#f59e0b" font-weight="600">CAD-Konstruktion, Vermessung &amp; 3D-Druck auf Hochschulniveau</text>
 </svg>
