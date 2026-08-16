@@ -22,14 +22,16 @@ Ich studiere Wirtschaftsinformatik an der Otto-von-Guericke-Universität Magdebu
 ## Auszeichnungen & Zertifikate
 
 * **Online-Stipendium:** [e-fellows.net](https://www.e-fellows.net/) (seit 09.2025)
-* **Zertifikate:** Certified ScrumMaster (CSM), FIM-Informationsmanager & FIM-Methodenexperte
+* **Zertifikate:** Certified ScrumMaster (CSM, Scrum Alliance 2025), FIM-Methodenexperte (Falcos GmbH 2025), FIM-Informationsmanager
 * **Preise:** Sonderpreis für Digitalisierung (CJD Droyßig)
 
 ## Kenntnisse
 
-* **Sprachen:** Python, Java, JavaScript, TypeScript, HTML5, CSS3, SQL
-* **Web & Tools:** React, Node.js, Netlify, Docusaurus, Git, Proxmox VE, n8n, 3D-Druck (FDM), CAD-Modellierung
+* **Programmierung & Daten:** Java, Python, Web (HTML, CSS, JavaScript), SQL & Datenbanken, Git
+* **Self-Hosting:** Proxmox VE, n8n, Nextcloud, Paperless-ngx, Stirling-PDF, Firefly III, SearXNG
+* **Methoden:** XÖV-Modellierung, CAD & 3D-Druck (FDM), Scrum
 * **Consulting & Recht:** Finanzen & Recht (SIDUM e.V.), PwC GenAI Masterclass, d-fine Kreditentscheidungs-Modelle
+* **Sprachen:** Deutsch (Muttersprache), Englisch (kommunikationssicher)
 
 ## Erfahrungen & Projekte
 
